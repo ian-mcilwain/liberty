@@ -1,0 +1,98 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="{{ html_lang }}" {{ html_lang_dir }}> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="{{ html_lang }}" {{ html_lang_dir }}>        <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="{{ html_lang }}" {{ html_lang_dir }}>               <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="{{ html_lang }}" {{ html_lang_dir }}>
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="author" content="{{ meta_author }}">
+    <meta name="description" content="{{ page_meta.meta_description }}">
+    <meta name="generator" content="HubSpot">
+    <title>{{ page_meta.html_title }}</title>
+    {% if site_settings.favicon_src %}
+    <link rel="shortcut icon" href="{{ site_settings.favicon_src }}" />{% endif %}
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css">
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJzIr4DnSasMDFxVMOgyIDS-4gx6IA6lI"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.8.0/slick.min.js"></script> -->
+    {{ standard_header_includes }} {% style include_default_custom_css="true" %}
+
+</head>
+
+<body class="home innerPage">
+    <div class="wrapper">
+        {% include 'custom/system/global/header.html' %}
+        <div class="hero innerHero aboutUs">
+            <div class="heroBg">
+                <div class="heroBgImage">
+                    <div class="inner">
+                        <div class="overlay"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <h1>About Us</h1>
+                <h2>For over 15 years, Liberty Staffing has been providing exceptional staffing solutions to businesses across Southern Ontario.</h2>
+            </div>
+        </div>
+
+        <div class="imageAndText imageLeftTextRight">
+            <div class="container">
+                <div class="leftSide">
+                    <img src="{% image_src 'textImgBlock1', label='Text Image Block 1' src='https://cdn2.hubspot.net/hubfs/431758/2018%20site/about/about1.jpg', no_wrapper=True %}"
+                        alt="block of images">
+                </div>
+                <div class="rightSide">
+                    {% widget_block rich_text 'imageLeftTextRight' overrideable=True, label='image left text right', no_wrapper=True %} {% widget_attribute
+                    'html' %}
+                    <p>Independently owned and operated, Liberty Staffing started modestly as one office and has now expanded to 11 branches to
+                    better serve our clients.</p>
+                    <p>Since 1999, we have helped our clients manage fluctuating workforces with temporary staffing solutions and find the perfect
+                    employees for permanent positions. All of our staffing representatives are trained in the Liberty Staffing Quality System
+                    (SQS). This ensures quality service across all branches and drives a commitment to training from all our employees.</p>
+                    {% end_widget_attribute %} {% end_widget_block %}
+                </div>
+            </div>
+        </div>
+
+        <div class="imageAndText imageLeftTextRight">
+            <div class="container">
+                <div class="leftSide">
+                    <img src="{% image_src 'textImgBlock2', label='Text Image Block 2' src='https://cdn2.hubspot.net/hubfs/431758/2018%20site/about/about2.jpg', no_wrapper=True %}"
+                        alt="block of images">
+                </div>
+                <div class="rightSide">
+                    {% widget_block rich_text 'imageLeftTextRight' overrideable=True, label='image left text right', no_wrapper=True %} {% widget_attribute
+                    'html' %}
+                    <p>Liberty Staffing is a member of The Staffing Edge and uses its award-winning staffing software, Stafftrak. This software
+                    allows us to customize our service to each and every client. Stafftrak organizes everything from payroll processing, government
+                    reporting, and invoicing to housing a full recruitment database and attendance tracking. Our sole focus is providing our
+                    clients with efficient service that is well-managed, organized, and proficient—Stafftrak helps us excel at this.</p>
+                    <p>Our clients and candidates trust Liberty Staffing Solutions to help eliminate staffing problems and simplify the hiring
+                    process. Find out how we can help you by contacting us today!</p>
+                    {% end_widget_attribute %} {% end_widget_block %}
+                </div>
+            </div>
+        </div>
+
+        <div class="centeredText halfWidth bottomSection">
+            <div class="container">
+                <h3>Learn More</h3>
+                <p>See how we solved our client's evolving staffing issues</p>
+                <a href="/read-case-study" class="button blue">Read Case Study</a>
+            </div>
+        </div>
+
+        {% include 'custom/system/global/footer.html' %} {{ standard_footer_includes }}
+    </div>
+    <!-- wrapper ends -->
+</body>
+
+</html>

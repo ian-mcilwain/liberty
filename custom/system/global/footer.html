@@ -1,37 +1,60 @@
 <footer>
-    <div class="footerInner"></div>
-	<div class="container">
-		<div class="column">
-			<a href="/" class="logo"><img src='{% image_src "footerLogo" label="footer logo", src="https://cdn2.hubspot.net/hubfs/3805695/SalesHub/paymedia%20logo.png", no_wrapper=True %}' alt=""></a>
-		</div>
-		<div class="column">
-			<ul>
-				<li><a href="/payroll">Payroll</a></li>
-				<li><a href="/time-management">Time Management</a></li>
-				<li><a href="/human-resources">Human Resources</a></li>
-				<li><a href="/benefits-administration">Benefits Administration</a></li>
-			</ul>
-		</div>
-		<div class="column">
-			<ul>
-				<li><a href="/platform">Platform</a></li>
-				<li><a href="/about-us">About Us</a></li>
-				<li><a href="/resources">Resources</a></li>
-				<li><a href="/contact">Contact</a></li>
-			</ul>
-		</div>
-		<div class="column">
-			<ul class="socialIcons">
-					<li><a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-					<li><a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-					<li><a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-					<li><a href=""><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
-				</ul>
-		</div>
-		<div class="copyright">
-			<p>© {{ year }} Paymedia</p>
-		</div>
-	</div>
+    <div class="footerBg"></div>
+    <div class="container">
+        <div class="column">
+            <a class="logo" href="/">
+                <img src="https://cdn2.hubspot.net/hubfs/431758/2018%20site/Homepage/logo.svg" alt="Libery Staffing Logo">
+            </a>
+        </div>
+        <div class="column">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li>
+                    <a href="/find-a-job">Find a Job</a>
+                </li>
+                <li>
+                    <a href="/employee-faq">Employee FAQ</a>
+                </li>
+                <li>
+                    <a href="/employer-services">Employer Services</a>
+                </li>
+            </ul>
+        </div>
+        <div class="column">
+            <ul>
+                <li><a href="/client-faq">Client FAQ</a></li>
+                <li><a href="/join-our-team">Join Our Team</a></li>
+                <li><a href="/accessibility-plan">Accessibility Plan</a></li>
+                <li><a href="/privacy-policy">Privacy Policy</a></li>
+            </ul>
+        </div>
+        <div class="column">
+            <div class="socialLinks">
+                <a href="" target="_blank">
+                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                </a>
+                <a href="" target="_blank">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                </a>
+                <a href="" target="_blank">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                </a>
+                <a href="" target="_blank">
+                    <i class="fa fa-google-plus" aria-hidden="true"></i>
+                </a>
+                <a href="" target="_blank">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+                <a href="" target="_blank">
+                    <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© {{ year }} Liberty Staffing</p>
+        </div>
+
+    </div>
 </footer>
 
 <!-- Main.js : all custom js -->
@@ -40,3 +63,4 @@
 <!-- Theme Foundation Javascript Package -->
 <script type="text/javascript" src='{{ get_public_template_url("hubspot_default/shared/responsive/theme-foundation-v1-0.js") }}'></script>
 
+<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>

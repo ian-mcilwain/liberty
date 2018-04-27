@@ -1,553 +1,538 @@
-/* platform page */
-
-.hero.video {
-	background-image: url("https://cdn2.hubspot.net/hubfs/3805695/SalesHub/platformBackground.png");
-	.container {
-		position: relative;
-
-		h1 {
-			margin-bottom: 30px;
-		}
-		.wistia_responsive_padding {
-			position: absolute;
-			right: 25%;
-			top: 25%;
-			a {
-				color: white;
-				// font-size: 80px;
-				text-decoration: none;
-				i {
-					font-size: 120px;
-				    background: $orangeGradient;
-				    display: flex;
-				    justify-content: center;
-				    align-items: center;
-				    border-radius: 50%;
-				    height: 100px;
-				    width: 100px;
-				    opacity: 0.8;
-				    transition: $transition;
-				}
-				i:hover {
-					opacity: 1;
-				}
-				.mobile {
-					display: none;
-					color: $fontGrey;
-				}
-
-			}
-		}
-	}
-}	
-
-.platform .servicesBlocks .container .hs_cos_wrapper_widget_container div.hs_cos_wrapper_type_custom_widget {
-	width: 33%;
+.hero.employerServices {
+    .container {
+        h1, h2 {
+            text-align: left;
+            max-width: 100%;
+        }
+    }
 }
 
-.imageLeftBoxRight {
-	margin-bottom: 100px;
-	.container {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-
-		.imageBox {
-			width: 50%;
-			border-radius: 50px;
-			overflow: hidden;
-			z-index: 2;
-		}
-		.textBox {
-			width: 55%;
-			margin-left: -5%;
-			background-color: white;
-			border-radius: $borderRadius;
-			padding: 5%;
-			box-shadow: $boxShadow;
-			z-index: 3;
-			h3 {
-				font-size: 2.4em;
-			}
-			h3:nth-of-type(2) {
-				margin-top: 20px;
-			}
-			p {
-				font-size: 1.9em;
-				margin-top: 20px;	
-				line-height: 24px;
-			}
-		}
-	}
-}
-
-.boxLeftImageRight {
-	.container {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-
-		.textBox {
-			width: 55%;
-			margin-right: -5%;
-			background-color: white;
-			border-radius: $borderRadius;
-			padding: 5%;
-			box-shadow: $boxShadow;
-			z-index: 3;
-			h3 {
-				font-size: 2.4em;
-			}
-			h3:nth-of-type(2) {
-				margin-top: 20px;
-			}
-			p {
-				font-size: 1.9em;
-				margin-top: 20px;	
-			}
-		}
-		.imageBox {
-			width: 50%;
-			border-radius: 50px;
-			overflow: hidden;
-			z-index: 2;
-		}
-	}
-}
-
-
-.imageLeftListRight {
-	background-image: url("https://cdn2.hubspot.net/hubfs/3805695/SalesHub/listBackground.png");
-	background-repeat: no-repeat;
-	height: 520px;
-	background-size: 49%;
-	background-position: center left;
-	margin-top: 60px;
-	margin-bottom: 60px;
-	.container {
-		display: flex;
-		justify-content: flex-end;
-		align-items: center;
-		height: 100%;
-		.textBox {
-			width: 40%;
-			display: flex;
-			justify-content: center;
-			align-items: flex-start;
-			flex-direction: column;
-			height: 100%;
-			h3 {
-				font-size: 2.4em;
-				margin-bottom: 20px;
-			}
-			ul {
-				padding-left: 20px;
-				li {
-					font-size: 1.6em;
-					margin-bottom: 10px;
-				}		
-			}
-		}
-	}
-}
-
-.centeredText {
-	margin-bottom: 60px;
-	margin-top: 60px;
-	.container {
-		text-align: center;
-		h3 {
-			line-height: 44px;
-			font-weight: 300;
-		}
-	}
-}
-
-/* services pages */
-
-.payroll .innerHero {
-	background-image: url("https://cdn2.hubspot.net/hubfs/3805695/SalesHub/payrollBackground.png");
-	.innerHeroBox {
-		border-left: 6px solid #75c59d;	
-	}
-}
-
-.timeManagement .innerHero {
-	background-image: url("https://cdn2.hubspot.net/hubfs/3805695/SalesHub/timeManagementHeader.png");
-	.innerHeroBox {
-		border-left: 6px solid #da5a3d;	
-	}
-}
-
-.humanResources .innerHero {
-	background-image: url("https://cdn2.hubspot.net/hubfs/3805695/benefitsHeroImage.png");
-	.innerHeroBox {
-		border-left: 6px solid #e1a23a;	
-	}
-}
-
-.benefits .innerHero {
-	background-image: url("https://cdn2.hubspot.net/hubfs/3805695/SalesHub/hrHeroImage.png");
-	.innerHeroBox {
-		border-left: 6px solid #4db0c5;	
-	}
-}
-
-
-.innerHero {
-	background-position: right top;
-    background-repeat: no-repeat;
-    background-size: 70%;
-	height: 870px;
-	padding-top: 120px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	.innerHeroBox {
-		width: 60%;
-		background-color: white;
-		border-radius: $borderRadius;
-		padding: 2.5% 5%;
-		text-align: center;
-		box-shadow: $boxShadow;
-		h1 {
-			font-size: 4.8em;
-		}
-		p {
-			margin-top: 30px;
-		}
-	}
-}
-
-.service .servicesBlocks .container .hs_cos_wrapper_widget_container div.hs_cos_wrapper_type_custom_widget {
-	width: 33%;
-	.serviceBlock .imageBox {
-		background-color: transparent;
-		box-shadow: none;
-	}
-}
-
-/* about us page */
-
-.aboutUs {
-	.innerHero {
-		background-image: url("https://cdn2.hubspot.net/hubfs/3805695/SalesHub/aboutUsHero.png");
-		.innerHeroBox {
-			border-left: 6px solid #062f66;	
-			font-size: 8px;
-			width: 60%;
-		}
-	}
-}
-
-.threeStats {
-	margin-top: 100px;
-	margin-bottom: 100px;
-	.container {
-		h3 {
-			text-align: center;
-			margin-bottom: 50px;
-		}
-		.statsBox {
-			display: flex;
-			.box {
-				width: 33%;
-				display: flex;
-				flex-direction: column;
-				align-items: center;
-				justify-content: center;
-				.circle {
-					width: 100px;
-					height: 100px;
-					border-radius: 50%;
-					display: flex;
-					justify-content: center;
-					align-items: center;
-					margin-bottom: 30px;
-					p {
-						color: white;
-						font-size: 3.6em;
-						// font-weight: 600;
-					}
-				}
-				p {
-					font-size: 2.4em;
-				}
-			}
-
-			.box:nth-of-type(1) {
-				.circle {
-					background-color: #ff9606;
-				}
-			}
-
-			.box:nth-of-type(2) {
-				.circle {
-					background-color: #e46141;
-				}
-			}
-
-			.box:nth-of-type(3) {
-				.circle {
-					background-color: #18b3ca;
-				}
-			}
-		}
-	}
-}
-
-.fiveBoxes {
-	height: 800px;
-	.container {
-		display: flex;
-		flex-direction: column;
-		flex-wrap: wrap;
-		height: 100%;
-		.box {
-			width: 29%;
-			// height: 300px;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			flex-direction: column;
-			text-align: center;
-			padding-left: 30px;
-			padding-right: 30px;
-			img {
-				width: 80px;
-			}
-			h3 {
-				font-size: 2.3em;
-				margin-top: 30px;
-				// margin-bottom: 30px;
-			}
-			p {
-				font-size: 1.9em;
-				// margin-bottom: 30px;	
-			}
-		}
-
-		.box.white {
-			// min-height: 320px;
-			box-shadow: $boxShadow;
-			border-radius: $borderRadius;
-			margin-bottom: 30px;
-			padding-top: 30px;
-			padding-bottom: 30px;
-			background-color: white;
-			h3 {
-				font-size: 2.1em;
-				margin-top: 20px;
-				margin-bottom: 20px;
-				color: #063068;
-			}
-		}
-
-		.box.white:nth-of-type(3) {
-			margin-top: 30px;
-		}
-
-		.box.white:nth-of-type(5) {
-			margin-top: 60px;
-			margin-bottom: 0;
-		}
-
-		.box:nth-of-type(6) {
-			padding-top: 40px;
-		}
-	}
-}
-
-.readMore {
-	background-image: url("https://cdn2.hubspot.net/hubfs/3805695/SalesHub/aboutRightSideImage.png");
-	background-repeat: no-repeat;
-	height: auto;
-	background-size: 49%;
-	background-position: center right;
-	margin-top: 60px;
-	margin-bottom: 60px;
-	.container {
-		display: flex;
-		justify-content: flex-start;
-		align-items: center;
-		height: 100%;
-		min-height: 600px;
-		.textBox {
-			width: 40%;
-			overflow: hidden;
-			h3 {
-				font-size: 2.4em;
-				margin-bottom: 20px;
-			}
-			p {
-				font-size: 1.9em;
-				transition: all 1s;
-				margin-bottom: 20px;
-			}
-			p.hidden {
-				height: 0;
-				overflow: hidden;
-				max-height: 0;
-				margin: 0;
-			}
-			.orangeButton {
-				height: 0;
-				padding: 0;
-				overflow: hidden;
-				transition: all 1s;
-				margin-left: 20px;
-				display: none;
-			}
-
-			a.readMoreButton {
-				text-decoration: none;
-				color: #063068;
-			}
-
-			a.readMoreButton:focus {
-				outline: none;
-			}
-
-		}
-		.textBox.open {
-			height: auto;
-			p.hidden {
-				height: auto;
-				max-height: 300px;
-				margin-bottom: 20px;
-			}
-			.orangeButton {
-				height: auto;
-				padding: 0.5em 2em;
-				display: inline-block;
-			}
-			a.readMoreButton {
-				height: 0;
-				overflow: hidden;
-				display: block;
-
-			}
-		}
-	}
-}
-
-/* contact */
-
-.contactBanner {
-	// height: 350px;
-	padding-top: 140px;
-	.contactBannerInner {
-		height: 350px;
-		// margin-top: 200px;
-	}
-}
-
-.contactCopy {
-	.container {
-		display: flex;
-		.contactCopyInner {
-			width: 60%;
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			padding-right: 10%;
-			h3 {
-
-			}
-
-			p {
-				margin-top: 50px;
-				margin-bottom: 50px;
-			}
-
-			ul {
-				li {
-					list-style: none;
-					margin-bottom: 20px;
-					color: $fontGrey;
-					i {
-						font-size: 30px;
-						margin-right: 30px;
-						width: 40px;
-					}
-					a {
-						text-decoration: none;
-						color: $fontGrey;
-					}
-				}
-			}
-
-		}
-		.formBox {
-			width: 40%;
-			padding: 40px;
-			padding-right: 20px;
-			border-radius: $borderRadius;
-			box-shadow: $boxShadow;
-			margin-top: -80px;
-			margin-bottom: -80px;
-			background-color: white;
-			z-index: 9;
-			h3.form-title {
-				// display: none;
-				text-align: center;
-			}
-			form {
-				.hs_numemployees,
-				.hs_interested_in_,
-				.hs_interested_to_switch_,
-				.hs_i_would_like_to_see_a_demo_of_the_isolved_software,
-				.hs_comments,
-				.hs_current_payroll_provider {
-					width: 100%;
-					label {
-					    display: block;
-					    font-size: 1.6em;
-					}
-				}
-
-				.hs_interested_in_{
-					margin-bottom: 20px;
-					.input ul {
-						display: flex;
-						flex-wrap: wrap;
-						li {
-							width: 50%;
-							// height: 30px;
-							input {
-								height: 40px;
-							}
-						}
-					}
-				} 
-			}
-		}
-	}
-}
-
-#map{
-	margin-bottom: 50px;
-	#content p {
-		font-size: 16px;
-	}
+/* employer services */
+.hero.employerServices {
+    z-index: -1;
+    .heroBg .heroBgImage .inner {
+        background-image: url('https://cdn2.hubspot.net/hubfs/431758/2018%20site/Employer%20Services/employer-banner.jpg');
+    }
 } 
+.centeredText {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    .container {
+        text-align: center;
+        h3 {
+            font-size: 3em;
+            font-weight: 400;
+        }
+        p {
+            margin-top: 40px;
+        }
+        .button {
+            display: inline-block;
+            margin-top: 60px;   
+        }
+    }
+}
+
+.centeredText.fullWidth {
+    .container {
+        padding-left: 12.5%;
+        padding-right: 12.5%;
+    }
+}
+
+.centeredText.halfWidth {
+    margin: 100px 0;
+    .container {
+        padding-left: 25%;
+        padding-right: 25%;
+    }
+}
+
+.centeredText.bottomSection {
+    margin-bottom: 200px;
+}
+
+.innerPage {
+    .imageAndText {
+        img {
+            border-radius: 10px;
+        }
+        .rightSide, .leftSide {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            p {
+                font-size: 2.6em;
+            }
+            ul li {
+                font-size: 2.4em;
+                color: $fontGrey;
+                font-weight: 300;
+            }
+        }
+    }
+}
+
+.threeIcons {
+    margin-bottom: 100px;
+    .container {
+        display: flex;
+        .iconBox {
+            width: 33.33%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 30px;
+            h3 {
+                margin-top: 30px;
+                margin-bottom: 10px;
+                font-weight: 400;
+                color: $darkBlue;
+            }
+
+            p {
+                color: $darkBlue;
+            }
+            .redIcon {
+                background-color: $red;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 120px;
+                height: 120px;
+                border-radius: 5px;
+                img {
+                    width: 50%;
+                    height: auto;
+                }
+            }
+        }
+
+    }
+}
+
+.weSpecialize {
+    position: relative;
+    padding: 100px 0 180px 0;
+    .weSpecializeBackground {
+        @include skew($skew);
+        background-color: $darkBlue;
+    }
+    .container {
+        position: relative;
+        * {
+            position: relative;
+        }
+        h2,h3,li {
+            color: white;
+        }
+        h2 {
+            text-align: center;
+            width: 50%;
+            margin: 0 auto;
+            margin-bottom: 30px;
+        }
+        .positionsLists {
+            display: flex;
+            .positionList {
+                width: 33.33%;
+                h3 {
+                    font-weight: 400;
+                    margin: 20px 0;
+                }
+                ul {
+                    padding-left: 20px;
+                    li {
+                        font-size: 2em;
+                        font-weight: 100;
+                    }
+                } 
+            }
+        }
+    }
+}
+
+.fourIcons {
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        .iconBox {
+            width: 21%;
+            margin-left: 2%;
+            margin-right: 2%;
+            // padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            text-align: center;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.3);
+            h3 {
+                margin-top: 30px;
+                margin-bottom: 10px;
+                font-weight: 400;
+                color: $darkBlue;
+                font-size: 2em;
+            }
+
+            p {
+                color: $darkBlue;
+            }
+            .redIcon {
+                background-color: $red;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 120px;
+                height: 120px;
+                border-radius: 5px;
+                img {
+                    width: 50%;
+                    height: auto;
+                }
+            }
+        }
+    }
+}
+
+/* about us */
+
+.hero.aboutUs .heroBg .heroBgImage .inner {
+    background-image: url('https://cdn2.hubspot.net/hubfs/431758/2018%20site/about/about-banner.jpg');
+}
+
+/* faq page */
+
+.hero.clientFaq .heroBg .heroBgImage .inner {
+    background-image: url('https://cdn2.hubspot.net/hubfs/431758/2018%20site/FAQ/client-faq-banner.jpg
+');
+}
+
+.hero.employeeFaq .heroBg .heroBgImage .inner {
+    background-image: url('https://cdn2.hubspot.net/hubfs/431758/2018%20site/FAQ/banner-faq.jpg');
+}
+
+.faqDisplay {
+    transition: all 1s;
+    // box-shadow: $boxShadow; 
+    margin-top: 100px;
+
+    .container {
+        width: 80%;
+        margin: 0 auto;
+        box-shadow: $boxShadow;
+        transition: all 1s;
+        height: auto;
+        max-height: 1000px;
+        padding: 5% 10%;
+        text-align: center; 
+        border-radius: 10px;
+        h2 {
+            margin-bottom: 30px;
+            font-weight: 400;
+            font-size: 3.6em;
+        }
+        p {
+            a {
+                font-size: 1em;
+                font-weight: 600;
+                color: $red;
+                text-decoration: none;
+                
+            }
+            a:hover {
+                color: $blue;
+            }
+        }
+        ul {
+            text-align: left;
+            // display: flex;
+            // flex-wrap: wrap;
+            // padding-left: 12.5%;
+            li {
+                // width: 50%;
+                text-align: left;
+                font-size: 1.8em;
+                // text-align: center; 
+                // list-style: none;
+            }
+        }
+    }
+}
+
+.faqList {
+    padding: 100px 0 150px 0;
+    .container {
+        display: flex;
+        // flex-direction: column;
+        flex-wrap: wrap;
+        // height: 500px;
+
+        .faqItem {
+            width: 50%;
+            padding-left: 20px;
+            padding-right: 20px;
+            h2 {
+                font-size: 2.6em;
+                margin-bottom: 20px;
+                
+                a {
+                    text-decoration: none;
+                    color: $darkBlue;   
+                    font-size: 1em;
+                    transition: all 0.6s;
+                    line-height: 1.1;
+
+                }
+                a.activeLink {
+                    font-weight: 400;
+                    font-size: 1.2em;
+                }
+            }
+            div {
+                display: none;
+            }
+        }
+    }
+}
+
+.faqList.employee .container {
+    // height: 1000px;
+}
+
+/* Meet the Team */
+
+.hero.ourTeam .heroBg .heroBgImage .inner {
+    background-image: url('https://cdn2.hubspot.net/hubfs/431758/2018%20site/Service%20Team/team.jpg');
+}
+
+.salesOrService {
+    padding-top: 100px;
+    padding-bottom: 150px;
+    .container {
+        display: flex;
+        a {
+            height: 300px;
+            width: 29%;
+            margin: 2%;
+            // padding: 30px;
+            text-decoration: none;
+            color: $darkBlue;
+            border-radius: 10px;
+            box-shadow: $boxShadow;
+            background-size: cover;
+            background-position: center;
+            .inner {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition: $transition;
+                border-radius: 10px;
+                background-color: rgba(255,255,255,0.7);
+            }
+            h2 {
+                font-weight: 400;
+                transition: $transition;
+            }
+        }
+        a:hover .inner {
+            background-color: rgba(0,0,0,0.3);
+            h2 {
+                color: white;
+            }
+        }
+    }
+}
+
+.teamModule {
+    padding: 100px 0;
+    .container {
+        #hs_cos_wrapper_my_flexible_column {
+            display: flex;
+            flex-wrap: wrap;
+            .hs_cos_wrapper {
+                width: 25%;
+                .teamMember:hover {
+                    cursor: pointer;
+                }
+                .teamMember {
+                    width: 100%;
+                    position: relative;
+                    transition: $transition;
+                    .image {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        img {
+                            // background-color: $blue;
+                            width: 60%;
+                            height: auto;
+                            border-radius: 10px;
+                        }
+
+                    }
+                    .copy {
+                        text-align: center;
+                        padding-top: 30px;
+                        padding-bottom: 30px;
+                        h2 {
+                            font-size: 2.5em;
+                            font-weight: 400;
+                            text-transform: capitalize;
+                        }
+                        h3 {
+                            font-size: 2em;
+                        }
+                        a {
+                            text-decoration: none;
+                            width: 30px;
+                            height: 30px;
+                            background-color: $darkBlue;
+                            border-radius: 50%;
+                            display: inline-block;
+                            // display: flex;
+                            // justify-content: center;
+                            // align-items: center;
+                            margin: 10px;
+                            border: 1px solid transparent;
+                            i {
+                                color: white;
+                                opacity: 1;
+                                font-size: 1em;
+                            }
+                        }
+                        a:hover {
+                            background-color: white;
+                            border: 1px solid $darkBlue;
+                            i {
+                                color: $darkBlue;
+                            }
+                        }
+                        i {
+                            font-size: 3.5em;
+                            color: $red;
+                            opacity: 0;
+                            transition: $transition;
+                        }
+
+                    }
+                    .fullView {
+                        position: absolute;
+                        top: calc(100% + 70px);
+                        display: flex;
+                        height: 500px;
+                        width: 400%;
+                        opacity: 0;
+                        transition: $transition;
+                        z-index: -1;
+                        .inner {
+                            position: relative;
+                            padding-bottom: 50px;
+                            .innerBackground {
+                                @include skew($skew);
+                                background-color: $red;
+                            }
+                            .innerContent {
+                                position: relative;
+                                display: flex;
+                                height: 100%;
+                                justify-content: center;
+                                align-items: center;
+                                * {
+                                    position: relative;
+                                }
+                                .image {
+                                    width: 40%;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    margin-top: -50px;
+                                    img {
+                                        width: 60%;
+                                        margin: 0 auto;
+                                        border-radius: 10px;
+                                    }
+                                }
+                                .fullDescription {
+                                    width: 60%;
+                                    margin-right: 60px;
+                                    // color: white;
+                                    background-color: white;
+                                    border-radius: 10px;
+                                    padding: 50px;
+                                    overflow: scroll;
+                                    max-height: 80%;
+                                    margin-top: -50px;
+                                    h2 {
+                                        font-size: 2.5em;
+                                        font-weight: 400;
+                                        text-transform: capitalize;
+                                    }
+                                    h3 {
+                                        font-size: 2em;
+                                    }
+                                    .location {
+                                        margin-bottom: 30px;
+                                    }
+                                }
+
+
+                            }
+                        }
+                    }
+                }
+                .teamMember.active {
+                    margin-bottom: 620px;
+                    .image img {
+                        box-shadow: $boxShadow;
+                    }
+                    .copy i {
+                        opacity: 1;
+                    }
+                    .fullView {
+                        opacity: 1;
+                        // background-color: white;
+                        z-index: 2;
+                    }
+                }
+            }
+            .hs_cos_wrapper:nth-child(4n - 3) {
+                // background-color: red;
+            }
+            .hs_cos_wrapper:nth-child(4n - 2) {
+                // background-color: pink;
+                .teamMember .fullView {
+                    left: -100%;
+                    
+                }
+            }
+            .hs_cos_wrapper:nth-child(4n -1) {
+                // background-color: green;
+                .teamMember .fullView {
+                    left: -200%;
+                }
+            }
+            .hs_cos_wrapper:nth-child(4n) {
+                // background-color: purple;
+                .teamMember .fullView {
+                    left: -300%;
+                }
+            }
+        }
+    }
+}
 
 /* resources */
 
-.resourceBanner {
-	padding-top: 140px;
-	.resourceBannerInner {
-		height: 350px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		background-size: cover;
-		background-repeat: no-repeat;
-		h1 {
-			color: white;
-		}
-	}
-
+.hero.resources .heroBg .heroBgImage .inner {
+    background-image: url('https://cdn2.hubspot.net/hubfs/431758/2018%20site/resources/109%20River%20City.png');
 }
 
 .resourcesGroup {
@@ -558,7 +543,10 @@
 		.resourceFilter {
 			width: 25%;
 			p {
-				margin-bottom: 50px;
+                margin-bottom: 50px;
+                font-size: 3em;
+                font-weight: 400;
+                text-transform: uppercase;
 			}
 			ul.resourceTags {
 				li{
@@ -586,7 +574,8 @@
 					width: 48%;
 					box-shadow: $boxShadow;
 					margin-bottom: 60px;
-					background-color: white;
+                    background-color: white;
+                    border-radius: 10px;
 					a {
 						position: relative;
 						display: block;
@@ -598,26 +587,30 @@
 							justify-content: center;
 							align-items: center;
 							margin-bottom: 20px;
-							background-size: contain;
+							background-size: cover;
 							background-repeat: no-repeat;
 							background-position: center center;
 							i {
 								font-size: 4.8em;
 								color: white;
 							}
-						}
+                        }
+                        
+                        .resTitle {
+                            padding-left: 20px;
+                        }
 						
 						p.itemTag {
 							font-size: 1em;
 							text-transform: uppercase;
-							text-align: center;
+							// text-align: center;
 							font-weight: 600;
 							margin-bottom: 10px;
 						}
 						h3 {
 							font-size: 1.2em;
 							font-weight: 300;
-							text-align: center;
+							// text-align: center;
 							margin-bottom: 20px;
 						}
 						span {
@@ -646,235 +639,694 @@
 	}
 }
 
-/* landing page */
+/* join our team */
 
-.landingPage h1 {
-	line-height: initial;
+.hero.joinOurTeam .heroBg .heroBgImage .inner {
+    background-image: url('https://cdn2.hubspot.net/hubfs/431758/2018%20site/join%20our%20team/join-our-team-banner.jpg');
 }
 
-.landingHero {
-	background-image: url("https://cdn2.hubspot.net/hubfs/3805695/SalesHub/landingBackground.png");
-	background-position: right top;
-    background-repeat: no-repeat;
-	background-size: 70%;
-	min-height: 1200px;
-	// height: 870px;
-	// padding-top: 120px;
-	.inner {
-		background-color: rgba(255,255,255,0.5);
-		padding-top: 120px;
-		height: 100%;
-		min-height: 1200px;
-		.container {
-			height: 100%;
-			display: flex;
-			justify-content: flex-start;
-			align-items: flex-start;
-			flex-direction: column;
-			.textBox {
-				width: 50%;
-				h1 {
-					font-size: 3em;
-				}
-				p {
-					// font-size: 1.8em;
-				}
 
-				h2 {
-					font-size: 2.2em;
-					margin-top: 20px;
-					margin-bottom: 20px;
-				}
-			}
-		}
-	}
+
+.internalListings {
+    .container {
+        h2 {
+            text-align: center;
+            font-size: 5em;
+            margin-bottom: 60px;
+        }
+        .postingsList {
+            border-radius: 10px;
+            border: 1px solid $blue;
+            .posting {
+                height: 120px;
+                border-bottom: 1px solid $blue;
+                display: flex;
+                .column {
+                    width: 25%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                }
+            }
+            .posting:nth-of-type(2n - 1) {
+                background-color: lightGrey;
+            }
+            .posting.title {
+                background-color: $darkBlue;
+                border-top-left-radius: 8px;
+                border-top-right-radius: 8px;
+                .column {
+                    h3 {
+                        color: white;
+                    }
+                }
+            }
+            .posting:last-of-type {
+                border-bottom: none;
+                border-bottom-left-radius: 8px;
+                border-bottom-right-radius: 8px;
+            }
+        }
+    }
+}
+
+/* find a career */
+.hero.findCareer {
+    z-index: -1;
+    .heroBg .heroBgImage .inner {
+        background-image: url('https://cdn2.hubspot.net/hubfs/431758/2018%20site/find%20a%20career/find-a-career-banner.jpg');
+    }
+    .container {
+        h1 {
+            text-align: left;
+            text-transform: capitalize;
+        }
+        h2 {
+            text-align: left;
+            max-width: none;
+        }
+
+        p {
+            color: white;
+            width: 500px;
+        }
+    }
 } 
 
-.form {
-	position: absolute;
-    top: 400px;
-    right: 100px;
-	.container {
-		display: flex;
-		justify-content: flex-end;
-		align-items: center;
-		.formBox {
-			width: 40%;
-		    padding: 40px;
-		    padding-right: 20px;
-		    border-radius: 10px;
-		    box-shadow: 0px 3px 29px 0px rgba(93, 112, 142, 0.3);
-		    // margin-top: -500px;
-		    // margin-bottom: 80px;
-		    // margin-right: 100px;
-		    background-color: white;
-		    z-index: 9;
-			h3.form-title {
-				// display: none;
-				text-align: center;
-			}
-			form {
-				.hs_numemployees,
-				.hs_interested_in_,
-				.hs_interested_to_switch_,
-				.hs_i_would_like_to_see_a_demo_of_the_isolved_software,
-				.hs_comments {
-					width: 100%;
-					label {
-					    display: block;
-					    font-size: 1.6em;
-					}
-				}
-
-				.hs_interested_in_{
-					margin-bottom: 20px;
-					.input ul {
-						display: flex;
-						flex-wrap: wrap;
-						li {
-							width: 50%;
-							// height: 30px;
-							input {
-								height: 40px;
-							}
-						}
-					}
-				} 
-			}
-		}
-	}
-
-} 
-
-/* landing ends */
-
-/* thank you starts */
-.thankYou {
-	padding-top: 140px;
-	height: 600px;
-	.container {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		flex-direction: column;
-		height: 100%;
-	}
+.checkBoxes {
+    margin-top: 100px;
+    .container {
+        display: flex;
+        .checkBox {
+            width: 33.33%;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+                width: 100px;
+            }
+            p {
+                padding: 10px;
+            }
+        }
+    }
 }
 
-/* thank you ends */
+.redSection {
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 200px;
+    .redSectionBackground {
+        @include skew($skew);
+        background-color: $red;
+    }
+    .imageAndText {
+        position: relative;
+        padding: 0;
+        .container {
+            position: relative;
+            * {
+                position: relative;
+            }
+            .leftSide {
+                width: 60%;
+                align-items: flex-start;
 
-/* Pillar Page */
+                h2,p,li {
+                    color: white;
+                }
+                li {
+                    font-size: 2.6em;
+                    font-weight: 100;
+                    padding-left: 20px;
+                }
+            }
+            .rightSide {
+                width: 40%;
+            }
+        }
+    }
+    .imageAndText:nth-of-type(2) {
+        .leftSide {
+            justify-content: flex-start;
+        }
+    }
+}
 
-.pillarPage {
-	.wrapper {
-		padding-top: 140px;
-		overflow: visible;
-	}
-	header.desktop {
-		// background-color: white;	
-	}
-	.progressContainer {
-		position: fixed;
-		top: 0px;
-		left: 0px;
-		right: 0px;
-		.progressBar {
-			height: 5px;
-			background-color: $orange;
-			width: 0%;
-			// transition: $transition;
-		}
-	}
-	.pillarHero {
-		// padding-top: 140px;
-		background-image: url("https://cdn2.hubspot.net/hubfs/3805695/SalesHub/pillarHero.png");
-		height: 640px;
-		background-size: cover;
-		background-repeat: no-repeat;
-		background-position: center bottom;	
-		margin-bottom: 100px;
-		.container {
-			height: 100%;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			flex-direction: column;
-			h1, h2 {
-				color: white;
-				text-align: center;
-				max-width: 530px;
-			}
-		}
-	}
+.applyForm.employerServicesForm .container .formBox .rightSide .hbspt-form form .hs_location {
+    width: 50%;
+}
 
-	.pillarChapters, .introduction {
-		
-		h2 {
-			color: #50b6ca;
-			margin-top: 20px;
-		}
+.applyForm {
+    margin-top: -100px;
+    margin-bottom: 150px;
+    z-index: 999;
+    .container {
+        .formBox {
+            box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.3);
+            border-radius: 10px;
+            display: flex;
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
 
-		h2.chapterTitle {
-			font-size: 3.8em;
-			color: #449eb0;
-			margin-top: 30px;
-		}
+            .leftSide {
+                width: 30%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                // padding: 20px;
+                img {
+                    border-radius: 10px;
+                }
+            }
+            .rightSide {
+                width: 70%;
+                padding-left: 40px;
+                h2 {
+                    text-align: center;
+                    margin-bottom: 20px;
+                }
+                .hbspt-form {
+                    form {
+                        display: flex;
+                        flex-wrap: wrap;
+                        .field {
+                            position: relative;
+                            width: 50%;
+                            padding: 10px;
+                            .input input {
+                                border: none;
+                                background-color: #e8e7e8;
+                                height: 40px;
+                                // margin-bottom: 20px;
+                                width: 100%;
+                                border-radius: 5px;
+                                padding-left: 10px;
+                                font-size: 1.8em;
+                            }
+                            .input input.error {
+                                border: 1px solid red;
+                            }
+                            .input input::placeholder {
+                                color: $darkBlue;
+                            }
+                            label {
+                                display: none;
+                            }
+                            .hs-error-msgs {
+                                height: 0;
+                                li {
+                                    list-style: none;
+                                    label {
+                                        position: absolute;
+                                        display: block;
+                                    }
+                                } 
+                            }
+                        }
+    
+                        .hs_location,
+                        .hs_upload_resume,
+                        .hs_yes_please_send_me_additional_information_via_email_from_time_to_time,
+                        .hs_what_type_of_position_do_you_need_filled {
+                            width: 100%;
+                            .input {
+                                select {
+                                    width: 100%;
+                                    height: 40px;
+                                    border: none;
+                                    background-color: #e8e7e8;
+                                    color: $darkBlue;
+                                    font-size: 1.8em;
+                                }
+                                textarea {
+                                    width: 100%;
+                                    border: none;
+                                    background-color: #e8e7e8;
+                                    padding: 10px;
+                                    height: 100px;
+                                    border-radius: 5px;
+                                    font-size: 1.8em;
+                                    color: $darkBlue;
+                                }
+                                select.error {
+                                    border: 1px solid red;
+                                }
+                                textarea::placeholder {
+                                    color: $darkBlue;
+                                }
+                            }
+                        }
+                        .hs_yes_please_send_me_additional_information_via_email_from_time_to_time {
+                            .input {
+                                ul li {
+                                    list-style: none;
+                                    label {
+                                        display: flex;
+                                        justify-content: flex-start;
+                                        align-items: center;
+                                        input {
+                                            width: 5%;
+                                        }
+                                    }
+                                }
+                            }
+                        } 
+                        .hs_upload_resume {
+                            .input {
+                                position: relative;
+                                background-color: #e8e7e8;
+                                border-radius: 5px;   
+                                height: 40px;                         
+                                input {
+                                    opacity: 0;
+                                    position: absolute;
+                                    top: 0;
+                                    z-index: 2;
+                                }
+                                .fileUpload {
+                                    position: absolute;
+                                    top: 0;
+                                    width: 100%;
+                                    height: 100%;
+                                    z-index: 1;
+                                    display: flex;
+                                    justify-content: flex-start;
+                                    align-items: center;
+                                    p {
+                                        font-size: 1.8em;
+                                        color: $darkBlue;
+                                        font-weight: 400;
+                                        padding-left: 10px;
+                                    }
+                                }
+                            } 
+                        }
+                        .hs_submit {
+                            .actions input.hs-button {
+                                border: none;
+                                background-color: $blue;
+                                color: white;
+                                margin-left: 10px;
+                                padding: 10px 20px;
+                                font-size: 1.8em;
+                                margin-top: 20px;
+                                border-radius: 5px;
+                            }
+                        }
+    
+                    }
+                }   
 
-		p {
-			margin-top: 20px;
-			 a {
-				font-size: 1em;
-				text-decoration: none;
-				color: $orange;
-			}
-		}
+            }
+        }
+    }
+}
 
-		.hs_cos_wrapper_type_widget_container ul li {
-			font-size: 1.9em;
-		}
-		
-	}
+.applyForm.findJobToday {
+    .container .formBox {
+        max-width: 600px;
+    .leftSide {
+        width: 0;
 
-	.introduction .container span .video {
-		width: 50%;
-		float: right;
-	}
+    }
+    .rightSide {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-left: 0;
+        
 
-	footer {
-		margin-bottom: -140px;
-	}
-
-
-} 
-
-.customerResources {
-	.innerHero {
-		height: 400px;
-		.container {
-			text-align: center;
-		}
-	}
-
-	.imageLeftBoxRight ul li, .boxLeftImageRight ul li {
-		list-style: none;
-
-		a {
-			text-decoration: none;
-			color: #062f66;
-			transition: $transition;
-		}
-	}
-
-	.imageLeftBoxRight ul li a:hover, .boxLeftImageRight ul li a:hover {
-		color: $orange;
-	}
+            .buttonBox {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .button {
+                    margin: 20px;
+                }
+            }
+        
+    }
+}
 }
 
 
-.customerResources .imageLeftBoxRight .container .textBox {
-	padding: 4%;
+
+.applyForm.referFriend {
+    // background-color: pink;
+    h3 {
+        text-align: center;
+    }
+    .container .formBox .rightSide .hbspt-form form .field {
+        // width: 100%;
+        textarea {
+            width: 100% !important;
+        }
+    }
+    .container .formBox .rightSide .hbspt-form form .hs_their_employment_interests,
+    .container .formBox .rightSide .hbspt-form form .hs_any_other_helpful_information {
+        width: 100%;
+        textarea {
+            background-color: #e8e7e8;
+            color: $darkBlue;
+            font-size: 1.8em;
+            padding-left: 10px;
+            padding-top: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+        textarea:placeholder {
+            color: $darkBlue;
+        }
+    }
+    form {
+        display: block !important;
+    }
+    fieldset {
+        max-width: 100% !important;
+    }
 }
 
-.customerResources .textBox ul:not(:last-child) {
-margin-bottom: 4%;
+
+/* contact page */
+.hero.contactHero {
+    overflow: visible;
+    padding-bottom: 200px;
+    .heroBg {
+        background-color: $darkBlue;
+    }
+    .container {
+        display: flex;
+        .textContent {
+            width: 56%;
+            h1, h2 {
+                text-align: left;
+                margin: 0;
+            }
+            h2 {
+                margin-bottom: 30px;
+            }
+            h1 {
+                font-weight: 400;
+                margin-bottom: 60px;
+                margin-top: 30px;
+            }
+        }
+        .formContent {
+            width: 40%;
+            background-color: white;
+            border-radius: 10px;
+            padding: 50px;
+            position: absolute;
+            right: 0;
+            box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.3);
+            h2 {
+                color: $darkBlue;
+                font-size: 4em;
+                font-weight: 400;
+            }
+            .hbspt-form {
+                form {
+                    display: flex;
+                    flex-wrap: wrap;
+                    .field {
+                        position: relative;
+                        width: 50%;
+                        padding: 10px;
+                        .input input {
+                            border: none;
+                            background-color: #e8e7e8;
+                            height: 40px;
+                            // margin-bottom: 20px;
+                            width: 100%;
+                            border-radius: 5px;
+                            padding-left: 10px;
+                            font-size: 1.8em;
+                        }
+                        .input input.error {
+                            border: 1px solid red;
+                        }
+                        .input input::placeholder {
+                            color: $darkBlue;
+                        }
+                        label {
+                            display: none;
+                        }
+                        .hs-error-msgs {
+                            height: 0;
+                            li {
+                                list-style: none;
+                                label {
+                                    position: absolute;
+                                    display: block;
+                                }
+                            } 
+                        }
+                    }
+
+                    .hs_which_liberty_staffing_location_would_you_like_to_get_in_touch_with_,
+                    .hs_what_is_your_greatest_hiring_challenge_ {
+                        width: 100%;
+                        .input {
+                            select {
+                                width: 100%;
+                                height: 40px;
+                                border: none;
+                                background-color: #e8e7e8;
+                                color: $darkBlue;
+                                font-size: 1.8em;
+                            }
+                            textarea {
+                                width: 100%;
+                                border: none;
+                                background-color: #e8e7e8;
+                                padding: 10px;
+                                height: 100px;
+                                border-radius: 5px;
+                                font-size: 1.8em;
+                                color: $darkBlue;
+                            }
+                            select.error {
+                                border: 1px solid red;
+                            }
+                            textarea::placeholder {
+                                color: $darkBlue;
+                            }
+                        }
+                    }
+                    .hs_submit {
+                        .actions input.hs-button {
+                            border: none;
+                            background-color: $blue;
+                            color: white;
+                            margin-left: 10px;
+                            padding: 10px 20px;
+                            font-size: 1.8em;
+                            margin-top: 20px;
+                            border-radius: 5px;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
 }
+
+.locationsMap.contact {
+    margin-top: -100px;
+    // margin-bottom: -100px;
+    #map {
+
+    }
+    .container {
+        justify-content: flex-start;
+    }
+}
+
+
+/* landing page starts */
+
+.landingMain .container {
+    display: flex;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    .leftSide {
+        width: 50%;
+        p {
+            margin-bottom: 20px;
+            font-weight: 400;
+        }
+        ul {
+            padding-bottom: 20px;
+            li {
+                font-size: 2em;
+                max-width: 100%;
+                font-weight: 400;
+                line-height: 1.6;
+                transition: all 0.3s ease;
+                font-family: "Lato", sans-serif;
+                color: 053068;
+            }
+        } 
+        h2 {
+            padding-bottom: 20px;
+            font-weight: 400;
+        }
+    }
+    .rightSide {
+            width: 50%;
+            padding: 60px;
+            padding-left: 180px;
+            padding-top: 0;
+
+        .hs_cos_wrapper_type_form {
+            // border: 1px solid;
+            border-radius: 10px;
+            box-shadow: $boxShadow;
+            display: block;
+            padding: 30px 60px;
+            h3 {
+                // text-align: center;
+                padding-left: 0px;
+            }
+            form {
+                display: flex;
+                flex-wrap: wrap;
+                .field {
+                    position: relative;
+                    width: 100%;
+                    padding: 10px;
+                    .input input {
+                        border: none;
+                        background-color: #e8e7e8;
+                        height: 40px;
+                        // margin-bottom: 20px;
+                        width: 100%;
+                        border-radius: 5px;
+                        padding-left: 10px;
+                        font-size: 1.8em;
+                    }
+                    .input input.error {
+                        border: 1px solid red;
+                    }
+                    .input input::placeholder {
+                        color: $darkBlue;
+                    }
+                    label {
+                        display: none;
+                    }
+                    .hs-error-msgs {
+                        height: 0;
+                        li {
+                            list-style: none;
+                            label {
+                                position: absolute;
+                                display: block;
+                            }
+                        } 
+                    }
+                }
+
+                .hs_location,
+                .hs_upload_resume,
+                .hs_yes_please_send_me_additional_information_via_email_from_time_to_time,
+                .hs_what_type_of_position_do_you_need_filled {
+                    width: 100%;
+                    .input {
+                        select {
+                            width: 100%;
+                            height: 40px;
+                            border: none;
+                            background-color: #e8e7e8;
+                            color: $darkBlue;
+                            font-size: 1.8em;
+                        }
+                        textarea {
+                            width: 100%;
+                            border: none;
+                            background-color: #e8e7e8;
+                            padding: 10px;
+                            height: 100px;
+                            border-radius: 5px;
+                            font-size: 1.8em;
+                            color: $darkBlue;
+                        }
+                        select.error {
+                            border: 1px solid red;
+                        }
+                        textarea::placeholder {
+                            color: $darkBlue;
+                        }
+                    }
+                }
+                .hs_yes_please_send_me_additional_information_via_email_from_time_to_time {
+                    .input {
+                        ul li {
+                            list-style: none;
+                            label {
+                                display: flex;
+                                justify-content: flex-start;
+                                align-items: center;
+                                input {
+                                    width: 5%;
+                                }
+                            }
+                        }
+                    }
+                } 
+                .hs_upload_resume {
+                    .input {
+                        position: relative;
+                        background-color: #e8e7e8;
+                        border-radius: 5px;   
+                        height: 40px;                         
+                        input {
+                            opacity: 0;
+                            position: absolute;
+                            top: 0;
+                            z-index: 2;
+                        }
+                        .fileUpload {
+                            position: absolute;
+                            top: 0;
+                            width: 100%;
+                            height: 100%;
+                            z-index: 1;
+                            display: flex;
+                            justify-content: flex-start;
+                            align-items: center;
+                            p {
+                                font-size: 1.8em;
+                                color: $darkBlue;
+                                font-weight: 400;
+                                padding-left: 10px;
+                            }
+                        }
+                    } 
+                }
+                .hs_submit {
+                    .actions input.hs-button {
+                        border: none;
+                        background-color: $blue;
+                        color: white;
+                        margin-left: 10px;
+                        padding: 10px 20px;
+                        font-size: 1.8em;
+                        margin-top: 20px;
+                        border-radius: 5px;
+                    }
+                }
+
+            }
+        }
+    }
+}
+

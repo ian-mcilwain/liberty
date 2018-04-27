@@ -2,118 +2,198 @@
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="{{ html_lang }}" {{ html_lang_dir }}> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="{{ html_lang }}" {{ html_lang_dir }}>        <![endif]-->
 <!--[if IE 8]>    <html class="no-js lt-ie9" lang="{{ html_lang }}" {{ html_lang_dir }}>               <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="{{ html_lang }}" {{ html_lang_dir }}> <!--<![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="{{ html_lang }}" {{ html_lang_dir }}>
+<!--<![endif]-->
+
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<meta name="author" content="{{ meta_author }}">
-	<meta name="description" content="{{ page_meta.meta_description }}">
-	<meta name="generator" content="HubSpot">
-	<title>{{ page_meta.html_title }}</title>
-	{% if site_settings.favicon_src %}<link rel="shortcut icon" href="{{ site_settings.favicon_src }}" />{% endif %}
-  <link rel = "stylesheet" type = "text/css" href = "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
-  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
-  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJzIr4DnSasMDFxVMOgyIDS-4gx6IA6lI"></script>
-  <script src="https://use.typekit.net/kkh2qsb.js"></script>
-  <script>try{Typekit.load({ async: true });}catch(e){}</script>
-	{{ standard_header_includes }}
-	{% style include_default_custom_css="true" %}
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="author" content="{{ meta_author }}">
+    <meta name="description" content="{{ page_meta.meta_description }}">
+    <meta name="generator" content="HubSpot">
+    <title>{{ page_meta.html_title }}</title>
+    {% if site_settings.favicon_src %}
+    <link rel="shortcut icon" href="{{ site_settings.favicon_src }}" />{% endif %}
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css">
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJzIr4DnSasMDFxVMOgyIDS-4gx6IA6lI"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.8.0/slick.min.js"></script> -->
+    {{ standard_header_includes }} {% style include_default_custom_css="true" %}
 
 </head>
-<body>
-<!-- Start HTML layout here. -->
-<!-- wrapper starts -->
-<div class="wrapper">
-	{% include 'custom/system/global/header.html' %}
 
-<!-- contact banner starts -->
-    <div class="contactBanner">
-       	<div class="contactBannerInner" style="background-image: url({% image_src "contactBanner" label="contact banner image", src="//cdn2.hubspot.net/hub/53/file-733888614-jpg/assets/hubspot.com/about/management/dharmesh-home.jpg", no_wrapper=True %})">	
-	    </div> 
+<body class="home">
+    <div class="wrapper">
+        {% include 'custom/system/global/header.html' %}
+        <div class="hero contactHero">
+            <div class="heroBg">
+                <div class="heroBgImage">
+                </div>
+            </div>
+            <div class="container">
+                <div class="textContent">
+                    <h1>Contact Liberty<br> Staffing Services</h1>
+                    <h2>Call or Visit Your Nearest Office Today</h2>
+                    <h2>With 11 locations across Southern Ontario, you don't need to go far to find top employment services.</h2>
+                </div>
+                <div class="formContent">
+                    <h2>Get in Touch Today!</h2>
+                      <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+                      
+                    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+                    <script>
+                        hbspt.forms.create({
+                            portalId: "431758",
+                            formId: "ba31a9db-c3b1-4bfe-94dc-7b04eb83ee12",
+                            css: ""
+                        });
+                    </script>
+                </div>
+            </div>
+        </div>
+       
+        <div class="locationsMap contact">
+            <div id="map">
+            </div>
+            <div class="container">
+                <div class="listing">
+                    <div class="locationBox arthur">
+                        <h2>Locations</h2>
+                        <img src="https://cdn2.hubspot.net/hubfs/431758/2018%20site/Homepage/map.svg" alt="">
+                        <h3>Arthur</h3>
+                        <p>480 Smith Street, Unit 3</p>
+                        <p>N0G 1A0</p>
+                        <p class="phoneNumber">519-848-2736</p>
+                    </div>
+                    <div class="locationBox brampton">
+                        <h2>Locations</h2>
+                        <img src="https://cdn2.hubspot.net/hubfs/431758/2018%20site/Homepage/map.svg" alt="">
+                        <h3>Brampton</h3>
+                        <p>700 Balmoral Drive, Unit 6B</p>
+                        <p>L6T 1X1</p>
+                        <p class="phoneNumber">905-799-8586</p>
+                    </div>
+                    <div class="locationBox cambridge">
+                        <h2>Locations</h2>
+                        <img src="https://cdn2.hubspot.net/hubfs/431758/2018%20site/Homepage/map.svg" alt="">
+                        <h3>cambridge</h3>
+                        <p>688 Hespeler Road, Suite 2A</p>
+                        <p>N1R 8N7</p>
+                        <p class="phoneNumber">519-624-2877</p>
+                    </div>
+                    <div class="locationBox guelph">
+                        <h2>Locations</h2>
+                        <img src="https://cdn2.hubspot.net/hubfs/431758/2018%20site/Homepage/map.svg" alt="">
+                        <h3>Guelph</h3>
+                        <p>214 Speedvale Avenue West, Unit 4</p>
+                        <p>N1H 1C4</p>
+                        <p class="phoneNumber">519-823-9697</p>
+                    </div>
+                    <div class="locationBox kitchener locationBoxActive">
+                        <h2>Locations</h2>
+                        <img src="https://cdn2.hubspot.net/hubfs/431758/2018%20site/Homepage/map.svg" alt="">
+                        <h3>Kitchener</h3>
+                        <p>625 King Street East, Suite 2D</p>
+                        <p>N2G 4V4</p>
+                        <p class="phoneNumber">519-742-2011</p>
+                    </div>
+                    <div class="locationBox london">
+                        <h2>Locations</h2>
+                        <img src="https://cdn2.hubspot.net/hubfs/431758/2018%20site/Homepage/map.svg" alt="">
+                        <h3>London</h3>
+                        <p>715 Wellington Road South, Unit C</p>
+                        <p>N6C 4R4</p>
+                        <p class="phoneNumber">519-453-9021</p>
+                    </div>
+                    <div class="locationBox mississauga">
+                        <h2>Locations</h2>
+                        <img src="https://cdn2.hubspot.net/hubfs/431758/2018%20site/Homepage/map.svg" alt="">
+                        <h3>Mississauga</h3>
+                        <p>1310 Dundas Street East, Suite 208</p>
+                        <p>L4Y 2C1</p>
+                        <p class="phoneNumber">905-949-5218</p>
+                    </div>
+                    <div class="locationBox stcatherines">
+                        <h2>Locations</h2>
+                        <img src="https://cdn2.hubspot.net/hubfs/431758/2018%20site/Homepage/map.svg" alt="">
+                        <h3>St. Catherines</h3>
+                        <p>80 King Street, Suite 8</p>
+                        <p>L2R 7G1</p>
+                        <p class="phoneNumber">905-688-8484</p>
+                    </div>
+                    <div class="locationBox stratford">
+                        <h2>Locations</h2>
+                        <img src="https://cdn2.hubspot.net/hubfs/431758/2018%20site/Homepage/map.svg" alt="">
+                        <h3>Stratford</h3>
+                        <p>190 Ontario Street</p>
+                        <p>N5A 3H4</p>
+                        <p class="phoneNumber">519-275-2742</p>
+                    </div>
+                    <div class="locationBox waterloo">
+                        <h2>Locations</h2>
+                        <img src="https://cdn2.hubspot.net/hubfs/431758/2018%20site/Homepage/map.svg" alt="">
+                        <h3>Waterloo</h3>
+                        <p>583 King Street North, Unit 5B</p>
+                        <p>N2V 2E5</p>
+                        <p class="phoneNumber">519-747-0577</p>
+                    </div>
+                    <div class="locationBox woodstock">
+                        <h2>Locations</h2>
+                        <img src="https://cdn2.hubspot.net/hubfs/431758/2018%20site/Homepage/map.svg" alt="">
+                        <h3>Woodstock</h3>
+                        <p>925 Dundas Street, Unit 3A</p>
+                        <p>N4S 8V3</p>
+                        <p class="phoneNumber">519-539-7961</p>
+                    </div>
+                    <div class="locationLinks">
+                        <ul>
+                            <li>
+                                <a href="#" class="locationLink" data-location="arthur">arthur</a>
+                            </li>
+                            <li>
+                                <a href="#" class="locationLink" data-location="brampton">brampton</a>
+                            </li>
+                            <li>
+                                <a href="#" class="locationLink" data-location="cambridge">cambridge</a>
+                            </li>
+                            <li>
+                                <a href="#" class="locationLink" data-location="guelph">guelph</a>
+                            </li>
+                            <li>
+                                <a href="#" class="locationLink locationLinkActive" data-location="kitchener">kitchener</a>
+                            </li>
+                            <li>
+                                <a href="#" class="locationLink" data-location="london">london</a>
+                            </li>
+                            <li>
+                                <a href="#" class="locationLink" data-location="mississauga">mississauga</a>
+                            </li>
+                            <li>
+                                <a href="#" class="locationLink" data-location="stcatherines">st. catharines</a>
+                            </li>
+                            <li>
+                                <a href="#" class="locationLink" data-location="stratford">stratford</a>
+                            </li>
+                            <li>
+                                <a href="#" class="locationLink" data-location="waterloo">waterloo</a>
+                            </li>
+                            <li>
+                                <a href="#" class="locationLink" data-location="woodstock">woodstock</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- listing ends here -->
+            </div>
+            <!-- container ends here -->
+        </div>
+        {% include 'custom/system/global/footer.html' %} {{ standard_footer_includes }}
     </div>
-
-<!-- contact banner ends -->
-<!-- contactCopy starts -->
-	<div class="contactCopy">
-		<div class="container">
-			<div class="contactCopyInner">
-				{% widget_block rich_text "ContactCopy" overrideable=True, label='Contact Copy' no_wrapper=True  %}
-				    {% widget_attribute "html" %}
-					    <h3>Contact Us</h3>
-					    <p>If you have any questions or would like further information about how Paymedia can help improve your business, contact us today.</p>
-					    <ul>
-					    	<li><i class="fa fa-phone"></i><a href="tel:973.428.9000">T:973.428.9000</a></li>
-					    	<li><i class="fa fa-fax"></i><a href="">F: 973.428.9120</a></li>
-					    	<li><i class="fa fa-envelope"></i><a href=""></a></li>
-					    	<li><i class="fa fa-envelope"></i><a href=""></a></li>
-					    </ul>
-				    {% end_widget_attribute %}
-				{% end_widget_block %}
-				
-			</div>
-			<div class="formBox">
-				{% form "contactForm" title='Contact Form', no_wrapper=True %}
-			</div>
-		</div>
-	</div>
-<!-- contactCopy ends -->
-<!-- map starts -->
-<div id="map" style="height: 400px;"></div>
-<!-- map ends -->
-
-
-
-	{% include 'custom/system/global/footer.html' %}
-</div> <!-- wrapper ends -->
-	{{ standard_footer_includes }}
-	<script type="text/javascript">
-	    // When the window has finished loading create our google map below
-	    google.maps.event.addDomListener(window, 'load', init);
-	
-	    function init() {
-	        // Basic options for a simple Google Map
-	        // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
-	        var mapOptions = {
-	            // How zoomed in you want the map to start at (always required)
-	            zoom: 15,
-
-	            // The latitude and longitude to center the map (always required)
-	            center: new google.maps.LatLng(40.825569, -74.351466), // New York
-
-	            // How you would like to style the map. 
-	            // This is where you would paste any style found on Snazzy Maps.
-	            styles: [{"featureType":"administrative.land_parcel","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"landscape.man_made","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"poi","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"labels","stylers":[{"visibility":"simplified"},{"lightness":20}]},{"featureType":"road.highway","elementType":"geometry","stylers":[{"hue":"#f49935"}]},{"featureType":"road.highway","elementType":"labels","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"hue":"#fad959"}]},{"featureType":"road.arterial","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"visibility":"simplified"}]},{"featureType":"road.local","elementType":"labels","stylers":[{"visibility":"simplified"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"hue":"#a1cdfc"},{"saturation":30},{"lightness":49}]}]
-	        };
-
-	        // Get the HTML DOM element that will contain your map 
-	        // We are using a div with id="map" seen below in the <body>
-	        var mapElement = document.getElementById('map');
-
-	        // Create the Google Map using our element and options defined above
-	        var map = new google.maps.Map(mapElement, mapOptions);
-
-	        // Let's also add a marker while we're at it
-	        var marker = new google.maps.Marker({
-	            position: new google.maps.LatLng(40.824213, -74.362710),
-	            map: map
-	        });
-	        
-            var contentString = '<div id="content">'+'<p>Our Address</p>'+'<p>383 Ridgedale Avenue</p>'+'<p>East Hanover, NJ 07936</p>'+'</div>';
-
-  var infowindow = new google.maps.InfoWindow({
-    content: contentString
-  });
-  
-  infowindow.open(map, marker);
-
-  marker.addListener('mouseover', function() {
-    infowindow.open(map, marker);
-  });
-  
-  marker.addListener('click', function() {
-    infowindow.open(map, marker);
-  });
-	    }
-	</script>
+    <!-- wrapper ends -->
 </body>
+
 </html>

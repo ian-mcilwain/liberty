@@ -1,96 +1,68 @@
 /* Footer */
 footer {
-	background-image: url("https://cdn2.hubspot.net/hubfs/3805695/SalesHub/footer.svg");
-	padding-top: 120px;
-	background-position: top center;
-	background-size: cover;
-	background-repeat: no-repeat;
-	z-index: 1;
-	
-	position: relative;
-	.footerInner {
-		position: absolute;
-		z-index: -1;
-		background-color: #F0F7FD;
-		// background-color: pink;
-		top: 200px;
-		left: 0;
-		right: 0;
-		bottom: 0;
+    height: 600px;
+    // overflow: hidden;
+    position: relative;
+    margin-bottom: -150px;
+    padding-top: 150px;
+    // margin-top: 150px;
+    .footerBg {
+        @include skew($skew);
+        background-color: $darkBlue;
+        overflow: hidden;
+    }
+    .container {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        * {
+            position: relative;
+        }
+        .column {
+            width: 25%;
+            display: flex;
+            justify-content: center;
+            .logo {
+                width: 200px;
+            }
+            ul {
+                li {
+                    list-style: none;
+                    a {
+                        text-decoration: none;
+                        color: white;
+                        font-weight: 100;
+                    }
+                }
+            }
+            .socialLinks {
+                display: flex;
+                a {
+                    text-decoration: none;
+                    color: $darkBlue;
+                    margin: 5px;
+                    i {
+                        background-color: white;
+                        width: 30px;
+                        height: 30px;
+                        border-radius: 50%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
+                a:hover {
 
-	}
-	.container {
-		display: flex;
-		flex-wrap: wrap;
-		.column {
-			width: 25%;
-			padding: 3%;
-			.logo {
-				max-width: 180px;
-				display: block;
-			}
-			.socialIcons {
-				// display: flex;
-				// padding-right: 60px;
-				li {
-					list-style: none;
-					display: inline-block;
-					background-color: $darkGrey;
-					width: 34px;
-					height: 34px;
-					border-radius: 50%;
-					margin: 0 7px;
-
-					a {
-						width: 100%;
-						height: 100%;
-						color: white;
-						display: flex;
-						justify-content: center;
-						align-items: center;
-						text-decoration: none;
-					}
-				}
-			}
-
-			ul li {
-				list-style: none;
-				// text-align: center;
-				a {
-					color: $fontGrey;
-					text-decoration: none;
-					font-size: 2.2em;
-					font-weight: 200;	
-				}
-			}
-		}
-		.column:nth-of-type(1) {
-			width: 23%;
-		}
-
-		.column:nth-of-type(2) {
-			width: 27%;
-		}
-
-		.column:nth-of-type(3) {
-			width: 27%;
-		}
-		.column:nth-of-type(4) {
-			width: 23%;
-		}
-		.copyright {
-			width: 100%;
-			text-align: center;
-			margin-top: 40px;
-			margin-bottom: 40px;
-			p {
-				font-size: 1.8em;
-				a {
-					color: $fontGrey;
-					text-decoration: none;
-					font-size: 1em;
-				}
-			}
-		}
-	}
+                }
+            }
+        }
+        .copyright {
+            width: 100%;
+            padding-top: 100px;
+            p {
+                text-align: center;
+                color: white;
+            }
+        }
+    }
 }

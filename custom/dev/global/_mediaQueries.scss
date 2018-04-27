@@ -1,621 +1,372 @@
 /* MEDIA QUERIES */
 
-@media screen and (max-width: 1360px) {
-	body, html {
-		font-size: 8px;
-	}
-
-	h1 {
-		line-height: 48px;
-	}
-
-	p {
-		line-height: 1.4;
-	}
-
-
-
-	.hero {
-		height: 700px;
-	}
-
-	.hrNeeds {
-		padding: 60px 0;
-	}
-
-	header .container .lower ul li {
-		margin: 0 8px;
-	}
-
-	header .container .lower ul li.dropDown ul.resourcesMenu {
-		height: 150px !important;
-		width: 500px;
-	}
-
-	footer .container .column {
-		padding: 1%;
-	}
-
-	.innerHero {
-		height: 700px;
-	}
-
-	.readMore {
-		margin-top: 0;
-	}
+@media screen and (max-width: 1200px) {
+	header.desktop .lower .container .logo {
+        width: 150px;
+    }
+    header.desktop .lower .container ul li a {
+        letter-spacing: 1px;
+    }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1080px) {
+    header.desktop .lower .container ul li a {
+        letter-spacing: 0;
+    }
+    .industriesWeServe .container .industries {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        .industry {
+            width: 100%;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            .list {
+                width: auto;
+                padding: 0;
+                margin-top: 30px;
+                text-align: center;
+                ul li {
+                    list-style: none;
+                }
+            }
+        }
+    } 
 
-	header .container .lower .logo {
-		width: 130px;
-	}
-
-	footer .container .column .socialIcons li {
-		margin: 0 4px;
-	}
-
-	.contactCopy .container .contactCopyInner {
-		width: 50%;
-	}
-
-	.contactCopy .container .formBox {
-		width: 50%;
-	}
-	.form {
-		right: 0;
-		.container .formBox {
-			width: 50%;
-		}
-	}
+    .fourIcons .container .iconBox {
+        width: 46%;
+        margin-bottom: 20px;
+    }
 }
 
-@media screen and (max-width: 880px) {
-	body, html {
-		font-size: 7px;
-	}
+@media screen and (max-width: 1030px) {
+    header.desktop {
+        display: none;
+    }
+    header.mobile {
+        display: block;
+    }
+    .locationsMap .container .listing {
+        width: 100%;
+    }
+	.checkBoxes .container {
+        flex-wrap: wrap;
+        .checkBox {
+            width: 100%;
+            display: flex;
+            flex-direction: column-reverse;
+            p {
+                max-width: 500px;
+                margin-top: 30px;
+            }
+        }
+    }
+    .applyForm .container .formBox .leftSide {
+        display: none;
+    }
 
-	h1 {
-		line-height: 44px;
-	}
+    .applyForm .container .formBox .rightSide {
+        width: 100%;
+        padding-left: 0;
+    }
 
-	h2 {
-		line-height: 24px;
-	}
+    .hero.contactHero .container {
+        flex-wrap: wrap;
+        .textContent {
+            width: 100%;
+            text-align: center;
+            h1 {
+                text-align: center;
+                margin: 0 auto;
+                margin-bottom: 30px
+            }
+            h2 {
+                text-align: center;
+                margin: 0 auto;
+                // margin-bottom: 30px;
+            }
+        }
+        .formContent {
+            width: 100%;
+            position: static;
+            margin-top: 60px;
+        }
 
-	h3 {
-		font-size: 4.2em;
-	}
+    }
+    .blog .listingPageContent .container .blog-section .post-listing .post-item {
+        width: 98%;
+    }
+    .landingMain .container {
+        // background-color: pink;
+        flex-wrap: wrap;
+        .leftSide, .rightSide {
+            width: 100%;
 
-	p {
-		line-height: 24px;
-	}
-
-	.container {
-		padding-left: 30px;
-		padding-right: 30px;
-	}
-
-	header.desktop {
-		display: none;
-	}
-	header.mobile {
-		display: block;
-	}
-
-	header .container .lower .logo {
-		width: 180px;
-	}
-
-	.hero, .innerHero {
-		background-size: 95%;
-		padding-top: 0;
-		position: relative;
-		z-index: 1;
-		height: 630px;
-		.inner {
-			position: absolute;
-			background-color: rgba(255,255,255,0.4);
-			top: 0;
-			right: 0;
-			left: 0;
-			bottom: 0;
-			z-index: -1;
-
-		}
-		.innerHeroBox {
-			width: 90%;
-		}
-	}
-
-	.aboutUs .innerHero .innerHeroBox {
-		width: 90%;
-		padding-top: 20px;
-		padding-bottom: 20px;
-		p {
-			font-size: 2em;
-			margin-top: 20px;
-		}
-	}
-
-	.imageLeftListRight {
-		height: auto;
-		background-size: 75%;
-		background-image: none !important;
-		.container {
-			justify-content: center;
-			.textBox {
-				display: flex;
-				justify-content: center;
-				align-items: center;
-				width: 100%;
-				background-color: rgba(255, 255, 255, 0.8);
-				ul li {
-					font-size: 1.9em;
-				}
-			}
-		}
-	}
-
-	.service .servicesBlocks .container .hs_cos_wrapper_widget_container div.hs_cos_wrapper_type_custom_widget {
-		width: 50%;
-	}
-
-	.hero.video .container .wistia_responsive_padding {
-		position: static;
-		a {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			margin-top: 20px;
-			i {
-				font-size: 40px;
-				height: 30px;
-				width: 30px;
-			}
-			.mobile {
-				display: block;
-				padding-left: 10px;
-				// margin-top: 20px;
-				font-size: 1.4em;
-			}
-		}
-	}
-
-	.readMore {
-		background-image: none !important;
-		margin-top: 30px;
-		.container {
-			min-height: initial;
-			.textBox {
-				width: 96%;
-				text-align: center;
-			} 
-		} 
-
-	} 
-
-	.contactCopy .container {
-		flex-wrap: wrap;
-		.contactCopyInner {
-			width: 100%;
-			margin-top: 30px;
-		}
-
-		.formBox {
-			width: 100%;
-			margin-top: 30px;
-			margin-bottom: 30px;
-		}
-
-	} 
-
-	.blog .wrapper {
-		padding-top: 0;
-	}
-
-	.blog .banner .container {
-		padding-top: 20%;
-	}
-
-	.blog .listingPageContent .container {
-		flex-wrap: wrap;
-	}
-
-	.blog .listingPageContent .container .blog-section {
-		width: 100%;
-	}
-
-	.blog .listingPageContent .container .sidebar {
-		width: 100%;
-	}
-
-	.form .container .formBox {
-		// margin-right: 0;
-		// margin-top: -700px;
-	}
-
-	.pillarPage .wrapper {
-		padding-top: 0;
-	}
-
-	footer .container {
-		flex-wrap: wrap;
-		.column {
-			padding: 1%;
-			width: 100%;
-			display: flex;
-			justify-content: center;
-			ul li {
-				text-align: center;
-			}
-			a.logo {
-				max-width: 200px;
-				display: block;
-				margin: 0 auto;
-			}
-		}
-
-		.column:nth-of-type(1) {
-			width: 100%;
-		}
-		.column:nth-of-type(2) {
-			width: 100%;
-		}
-
-		.column:nth-of-type(3) {
-			width: 100%;
-		}
-		.column:nth-of-type(4) {
-			width: 100%;
-		}
-	}
+        }
+        .rightSide {
+            padding: 0;
+        }
+    }
 }
 
-@media screen and (max-width: 780px) {
-	
-	.innerWrapper .inner .circle {
-		transform: scale(2,2);
-	}
+@media screen and (max-width: 900px) {
+    .imageAndText .container {
+        flex-wrap: wrap;
+        .leftSide, .rightSide {
+            width: 100%;
+            padding: 0;
+            h2 {
+                text-align: center;
+            }
+        }
+        .leftSide.home img {
+            display: none;
+        }
+    }
 
-	.hero {
-		height: 580px;
-	}
+    .redSection .imageAndText .container {
+        flex-wrap: wrap;    
+        .leftSide, .rightSide {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+        }
+    }
 
-	.innerHero {
-		height: 530px;
-	}
+    .home .imageLeftTextRight {
+        padding-top: 0;
+    }
+    .statsGrid .container .grid .gridItem {
+        width: 50%;
+        border: none !important;
+    }
 
-	.landingHero {
-		min-height: 0;
-		.inner {
-			min-height: 0;
-		}
-	}
+    .weSpecialize .container .positionsLists {
+        flex-wrap: wrap;
+        .positionList {
+            width: 100% !important;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            ul li {
+                list-style: none;
+                text-align: center;
+            }
 
-	.hrNeeds .container {
-		text-align: center;
-	}
+        }
+    }
 
-	.servicesBlocks .container .hs_cos_wrapper_widget_container {
-		div.hs_cos_wrapper_type_custom_widget {
-			width: 50%;
-		}
-	}
+    .threeIcons .container {
+        flex-wrap: wrap;
+        .iconBox {
+            width: 100% !important;
+            margin-bottom: 20px;
+        }
+    } 
 
-	.threeBoxes .container .leftSide {
-		justify-content: center;
-	}
+    .internalListings .container .postingsList .posting {
+        height: auto;
+        flex-direction: column;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        .column {
+            width: 100%;
 
-	.videoSection {
-		height: auto;
-		background-size: 98%;
-		background-position: left top;	
-		.container .inner {
-			flex-wrap: wrap;
-			.leftSide {
-				width: 100%;
-				height: 300px;
-			}
-			.rightSide {
-				width: 100%;
-			}
-		}
-	}
+        }
+    }
 
-	.threeBoxes {
-		height: auto;
-		margin-bottom: 0;
-		.container {
-			flex-wrap: wrap;
-
-			.leftSide {
-				padding: 0;
-				width: 100%;
-				margin-bottom: 50px;
-				text-align: center;
-			}
-
-			.rightSide {
-				width: 100%;
-				height: 1020px;
-			}
-		}
-	}
-
-	.circleImage .container {
-		flex-wrap: wrap;
-		.leftSide {
-			width: 100%;
-			img {
-				max-width: 350px;
-			}
-		}
-		.rightSide {
-			width: 100%;
-			margin-bottom: 50px;
-		}
-
-	}
-
-	.platform .servicesBlocks {
-		margin-bottom: 0;
-	}
-
-	.imageLeftBoxRight .container {
-		flex-wrap: wrap;
-		.textBox {
-			width: 100%;
-			margin-left: 0;
-			text-align: center;
-		}
-
-		.imageBox {
-			width: 100%;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			margin-bottom: 30px;
-			img {
-				max-width: 300px;
-				margin: 0 auto;
-			}
-		}
-	}
-
-	.boxLeftImageRight .container {
-		flex-wrap: wrap;
-		flex-direction: column-reverse;
-		.textBox {
-			width: 100%;
-			margin-right: 0;
-			text-align: center;
-		}
-
-		.imageBox {
-			width: 100%;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			margin-top: 30px;
-			margin-bottom: 30px;
-			img {
-				max-width: 300px;
-				margin: 0 auto;
-			}
-		}
-	}
-
-	.threeStats .container .statsBox {
-		flex-wrap: wrap;
-		.box {
-			width: 100%;
-			margin-bottom: 20px;
-		}
-	}
-
-	.fiveBoxes {
-		height: auto;
-
-		.container {
-			flex-direction: row;
-
-			.box {
-				width: 46%;
-				margin-left: 2%;
-				margin-right: 2%;
-			}
-
-			.box.white:nth-of-type(3) {
-				margin-top: 0;
-			}
-
-			.box.white:nth-of-type(5) {
-				margin-top: 0;
-				margin-bottom: 30px;
-			}
-
-			.box:nth-of-type(6) {
-				padding-top: 40px;
-			}
-		}
-
-	} 
-
-	.landingHero {
-		height: auto;
-		.inner {
-			background-color: rgba(255,255,255,0.7);
-		}
-	}
-
-	.landingHero .inner .container .textBox {
-		width: 100%;
-		text-align: center;
-	}
-
-	.form {
-		position: static;
-		.container .formBox {
-			margin-right: 0;
-			margin-top: 30px;
-			width: 100%;
-		}
-	} 
+    .resourcesGroup .container {
+        flex-wrap: wrap;
+        .resourceFilter {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            .resourceTags {
+                display: flex;
+                li {
+                    margin: 10px;
+                }
+            }
+        }
+        .resources {
+            width: 100%;    
+        }
+    } 
 
 
-	/* Pillar Page */
+}
 
-		.introStatsGroup {
-			display: block;
-		}
+@media screen and (max-width: 800px) {
+    .hero .container .buttonBox {
+        flex-direction: column;
+    }
+    .testimonials .testimonialSlider .slide {
+        height: auto;
+        margin: 10px;
+        // padding: 30px;
+        img {
+            display: none;
+        }
+        .testimonialText {
+            width: 100%;
+            padding: 0 30px;
+        }
+    }
 
-		.pillarPage .introStat{
-			width: 100%;
-			margin: 40px 0 20px;
-		}
+    .faqList .container .faqItem {
+        width: 100%;
+    }
 
-		.pillarChapters {
-			.container {
-				display: block;
+    .salesOrService {
+    padding-top: 150px;
+    padding-bottom: 150px;
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        a {
+            display: flex;
+            height: 400px;
+            width: 96%;
+            margin: 2%;
+            // padding: 30px;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            color: $darkBlue;
+        }
+    }
+    }
 
-				> span {
-					width: 100%;
-				}
-			}
-		}
+    .teamModule .container {
+            .hs_cos_wrapper:nth-child(4n - 3) {
+                // background-color: red;
+                left: initial;
+            }
+            .hs_cos_wrapper:nth-child(4n - 2) {
+                // background-color: pink;
+                .teamMember .fullView {
+                    left: initial;
+                    
+                }
+            }
+            .hs_cos_wrapper:nth-child(4n -1) {
+                // background-color: green;
+                .teamMember .fullView {
+                    left: initial !important;
+                }
+            }
+            .hs_cos_wrapper:nth-child(4n) {
+                // background-color: purple;
+                .teamMember .fullView {
+                    left: initial;
+                }
+            }
+    }
 
-		nav.chapters {
-			position: fixed;
-			width: calc(100% - 40px);
-			left: 0;
-			bottom: calc(-40vh - 60px);
-			top: auto;
-			height: 40vh;
-			background: white;
-			box-shadow: 0 -10px 30px rgba(0,0,0,0.08);
-			padding: 20px 20px 40px;
-			transition: $transition;
-			z-index: 5;
 
-			button.mobileTab {
-				display: flex;
-			}
+    .teamModule .container #hs_cos_wrapper_my_flexible_column .hs_cos_wrapper {
+        width: 50%;
+    }
 
-			&.open {
-				bottom: 0;
-			}
+    .teamModule .container #hs_cos_wrapper_my_flexible_column .hs_cos_wrapper .teamMember .fullView {
+        width: 200%;
+    }
 
-			ul {
-				height: 32vh;
-				overflow: auto;
-			}
-		}
+    .teamModule .container #hs_cos_wrapper_my_flexible_column .hs_cos_wrapper:nth-child(2n - 1) .teamMember .fullView {
 
-		.pillarPage > div {
-			blockquote {
-				margin: 40px auto;
-				float: none;
-				font-size: 24px;
-			}
+    }
+    .teamModule .container #hs_cos_wrapper_my_flexible_column .hs_cos_wrapper:nth-child(2n) .teamMember .fullView {
+        left: -100%;    
+    }
 
-			h2 {
-				font-size: 30px;
-			}
+    footer {
+        padding-top: 0;
+        .container {
+            flex-wrap: wrap;
+            .column {
+                width: 100%;
+                margin-top: 20px;
+            }
+        } 
+    } 
 
-			h3 {
-				font-size: 26px;
-			}
+    .hbspt-form form .field {
+        width: 100% !important;
+    }
 
-			h5 {
-				font-size: 18px;
-			}
-		}	
+}
 
-	}
 
 @media screen and (max-width: 600px) {
-	
-	.container {
-		padding-left: 10px;
-		padding-right: 10px;
-	}
+	.statsGrid .container .grid .gridItem {
+        width: 100%;
+    }
+    .locationsMap .container .listing {
+        height: 500px;
+        .locationBox {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            left: 0;
+        }
 
-	.hero {
-		height: 500px;
-	}
+        .locationLinks {
+            padding: 0;
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            flex-direction: column;
+            left: 0;
+            ul {
+                // height: auto;
+                transform: translateX(-25%);
+            }
+        } 
+    } 
 
-	.aboutUs .innerHero {
-		height: 520px;
-	}
+    .fourIcons .container .iconBox {
+        width: 96%;
+        margin-bottom: 20px;
+    }
 
-	.innerHero {
-		height: 420px;
-		align-items: flex-end;
-	}
+    .teamMember.active {
+        margin-bottom: 0 !important;
+        .copy i {
+            display: none;
+        }
+        .fullView {
+            display: none !important;
+        }
+    }
 
-	.videoSection .container .inner .leftSide {
-		height: 200px;
-	}
+    .centeredText.halfWidth .container {
+        padding: 20px 0;
+    }
 
-	.threeBoxes .container .rightside {
-		height: 975px;
-	}
+    .resourcesGroup .container {
+        .resourceFilter .resourceTags {
+            display: block;
+        }
+        .resources .hs_cos_wrapper_widget_container {
+            flex-wrap: wrap;
+            .hs_cos_wrapper_type_custom_widget {
+                width: 100%;
+            }
+        } 
+    } 
 
-	.imageLeftListRight {
-		background-size: 98%;
-	}
-
-	.platform .servicesBlocks {
-		margin-top: 0;
-		.container .hs_cos_wrapper_widget_container div.hs_cos_wrapper_type_custom_widget {
-			width: 100%;
-		}
-	}  
-
-	.fiveBoxes {
-		height: auto;
-
-		.container {
-			flex-direction: row;
-
-			.box {
-				width: 96%;
-				margin-left: 2%;
-				margin-right: 2%;
-			}
-
-			.box.white:nth-of-type(3) {
-				margin-top: 0;
-			}
-
-			.box.white:nth-of-type(5) {
-				margin-top: 0;
-				margin-bottom: 30px;
-			}
-
-			.box:nth-of-type(6) {
-				padding-top: 40px;
-			}
-		}
-
-	}
-
-	.blog .listingPageContent .container .blog-section .post-listing .post-item {
-		width: 98%;
-	} 
-
-	.landingHero {
-		background-size: 100%;
-	}
-
-	.pillarPage .introduction .container span .video {
-		width: 100%;
-		float: right;
-		margin-top: 20px;
-		margin-bottom: 20px;
-	}
-
-
-
+    .applyForm.findJobToday .container .formBox .rightSide .buttonBox {
+        flex-direction: column;
+    }
 }

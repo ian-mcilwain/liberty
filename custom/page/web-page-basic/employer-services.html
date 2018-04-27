@@ -1,0 +1,217 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="{{ html_lang }}" {{ html_lang_dir }}> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="{{ html_lang }}" {{ html_lang_dir }}>        <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="{{ html_lang }}" {{ html_lang_dir }}>               <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="{{ html_lang }}" {{ html_lang_dir }}>
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="author" content="{{ meta_author }}">
+    <meta name="description" content="{{ page_meta.meta_description }}">
+    <meta name="generator" content="HubSpot">
+    <title>{{ page_meta.html_title }}</title>
+    {% if site_settings.favicon_src %}
+    <link rel="shortcut icon" href="{{ site_settings.favicon_src }}" />{% endif %}
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css">
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJzIr4DnSasMDFxVMOgyIDS-4gx6IA6lI"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.8.0/slick.min.js"></script> -->
+    {{ standard_header_includes }} {% style include_default_custom_css="true" %}
+
+</head>
+
+<body class="home innerPage">
+    <div class="wrapper">
+        {% include 'custom/system/global/header.html' %}
+        <div class="hero innerHero employerServices">
+            <div class="heroBg">
+                <div class="heroBgImage">
+                    <div class="inner">
+                        <div class="overlay"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <h1>Employer Services</h1>
+                <h2>Liberty Staffing has your Perfect Staffing Solution</h2>
+            </div>
+        </div>
+
+        <div class="centeredText fullWidth">
+            <div class="container">
+                <h3>Do you need to fill a vacant position fast? Do you need immediate help from top-quality temp employees? Liberty Staffing
+                will find and hire the perfect fit for your organization.</h3>
+            </div>
+        </div>
+
+        <div class="imageAndText imageLeftTextRight">
+            <div class="container">
+                <div class="leftSide">
+                    <img src="{% image_src 'textImgBlock1', label='Text Image Block 1' src='https://cdn2.hubspot.net/hubfs/431758/2018%20site/Employer%20Services/employer1.jpg', no_wrapper=True %}"
+                        alt="block of images">
+                </div>
+                <div class="rightSide">
+                    {% widget_block rich_text 'imageLeftTextRight' overrideable=True, label='image left text right', no_wrapper=True %} {% widget_attribute
+                    'html' %}   
+                    <p>The hiring process is tedious and expensive, especially when you’re looking for candidates with specific qualifications and
+                    skills. Outsourcing your staffing needs will save you time, money, and the stress of managing the recruitment process. Liberty
+                    Staffing offers completely flexible staffing solutions.</p>
+                    {% end_widget_attribute %} {% end_widget_block %}
+                </div>
+            </div>
+        </div>
+
+        <div class="threeIcons">
+            <div class="container">
+                <div class="iconBox">
+                    <div class="redIcon">
+                        <img src="https://cdn2.hubspot.net/hubfs/431758/2018%20site/Employer%20Services/employer1.svg" alt=""> 
+                    </div>
+                    <h3>Tell us What you Need</h3>
+                    <p>Have a position you need filled? Give us the details and we'll start searching.</p>
+                </div>
+                <div class="iconBox">
+                    <div class="redIcon">
+                        <img src="https://cdn2.hubspot.net/hubfs/431758/2018%20site/Employer%20Services/employer2.svg" alt="">
+                    </div>
+                    <h3>Leave Recruiting to Us</h3>
+                    <p>We find candidates and evaluate the fit based on your needs and their skills.</p>
+                </div>
+                <div class="iconBox">
+                    <div class="redIcon">
+                        <img src="https://cdn2.hubspot.net/hubfs/431758/2018%20site/Employer%20Services/employer3.svg" alt="">
+                    </div>
+                    <h3>You Decide</h3>
+                    <p>We aim to match our candidates with jobs where they will succed, but the final choice is up to you.</p>
+                </div>
+            </div>
+        </div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, voluptas, maiores quo, tempore expedita aliquid magnam eaque voluptatum quidem assumenda id? Quasi quas commodi illum aperiam earum ratione veritatis nostrum unde blanditiis est dicta magnam culpa nesciunt, amet adipisci iusto laboriosam, cumque perspiciatis repellat, hic eveniet aliquid ad? Sed reiciendis dignissimos sunt odio ab saepe inventore a dolore voluptatum culpa! Consequuntur labore placeat cumque ipsa, asperiores esse praesentium nihil! Voluptate optio sint dicta ullam assumenda, veniam deleniti perspiciatis laboriosam magnam, doloremque totam cumque omnis est delectus, laborum nisi eligendi. Perferendis amet beatae ea distinctio voluptatibus! Dolores quia hic numquam adipisci.
+
+
+        <div class="imageAndText imageLeftTextRight">
+            <div class="container">
+                <div class="leftSide">
+                    <img src="{% image_src 'textImgBlock2', label='Text Image Block 2' src='https://cdn2.hubspot.net/hubfs/431758/2018%20site/Employer%20Services/employer2.jpg', no_wrapper=True %}"
+                        alt="block of images">
+                </div>
+                <div class="rightSide">
+                    {% widget_block rich_text 'imageLeftTextRight' overrideable=True, label='image left text right', no_wrapper=True %} {% widget_attribute
+                    'html' %}
+                    <p>We manage your temporary workers so you can adjust your staff as needed, giving you a competitive advantage and keeping your
+                    costs low. All our sales representatives and client care specialists are trained in the Liberty Staffing Qualify System (SQS)
+                    and provide our clients with a customized staffing solution that matches their businesses with the right people for the job.</p>
+                    {% end_widget_attribute %} {% end_widget_block %}
+                </div>
+            </div>
+        </div>
+
+        <div class="weSpecialize">
+            <div class="weSpecializeBackground"></div>
+            <div class="container">
+                <h2>Our 11 locations across southern Ontario have a massive database filled with candidates near you. We specialize in hiring:</h2>
+                <div class="positionsLists">
+                    <div class="positionList">
+                        <h3>Warehouse Positions</h3>
+                        <ul>
+                            <li>Shippers</li>
+                            <li>Receivers</li>
+                            <li>Forklift Operators</li>
+                            <li>Assemblers - Packagers</li>
+                            <li>General Labourers</li>
+                            <li>Dock Workers</li>
+                            <li>Stock Personnel</li>
+                        </ul>
+                    </div>
+                    <div class="positionList">
+                        <h3>Industrial Positions</h3>
+                        <ul>
+                            <li>Electronic Assemblers </li>
+                            <li>Machine Operators</li>
+                            <li>Press Operators</li>
+                            <li>Break Press Operators</li>
+                            <li>Welders </li>
+                            <li>Solderers</li>
+                            <li>Food Processors</li>
+                        </ul>
+                    </div>
+                    <div class="positionList">
+                        <h3>Office Positions</h3>
+                        <ul>
+                            <li>Accounts Receivable </li>
+                            <li>Data Entry Clerks </li>
+                            <li>Logistics Co-ordinators </li>
+                            <li>Administrative Assistants </li>
+                            <li>Customer Service Representatives </li>
+                            <li>Clerical Assistants </li>
+                            <li>Telecommunication Representatives </li>
+                            <li>Inventory Clerks</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="centeredText halfWidth">
+            <div class="container">
+                <h3>Liberty Is Not Your Average Staffing Agency</h3>
+                <p>We pride ourselves on finding the perfect employees for your business, but we don’t stop there. Liberty Staffing offers a
+                full range of services to complement your staffing needs. In addition to finding you the top temp and permanent staff, we
+                also provide:</p>
+            </div>
+        </div>
+
+        <div class="fourIcons">
+            <div class="container">
+                <div class="iconBox">
+                    <div class="redIcon">
+                        <img src="https://cdn2.hubspot.net/hubfs/431758/2018%20site/Employer%20Services/employer3.svg" alt="">
+                    </div>
+                    <h3>HR Support</h3>
+                    <p>Let us take care of everything with comprehensive payroll, health and safety, and regulatory management</p>
+                </div>
+                <div class="iconBox">
+                    <div class="redIcon">
+                        <img src="https://cdn2.hubspot.net/hubfs/431758/2018%20site/Employer%20Services/employer4.svg" alt="">
+                    </div>
+                    <h3>Comprehensive Candidate Screening</h3>
+                    <p>Feel confident in your hire with customized job-specific testing and evaluation</p>
+                </div>
+                <div class="iconBox">
+                    <div class="redIcon">
+                        <img src="https://cdn2.hubspot.net/hubfs/431758/2018%20site/Employer%20Services/employer5.svg" alt="">
+                    </div>
+                    <h3>Payment Simplicity</h3>
+                    <p>Our billing process is transparent and straightforward with detailed weekly invoices</p>
+                </div>
+                <div class="iconBox">
+                    <div class="redIcon">
+                        <img src="https://cdn2.hubspot.net/hubfs/431758/2018%20site/Employer%20Services/employer6.svg" alt="">
+                    </div>
+                    <h3>Flexible Staffing Solutions</h3>
+                    <p>Hire how you want, for as long as you need. Whether you need temporary , temporary-to-permanent, or permanent help, we have the solution</p>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="centeredText halfWidth bottomSection">
+            <div class="container">
+                <h3>Get Started With Ontario's Top Staffing Agency. Stop Stresssing Over Recruiting New Staff.  Let Us Save You Time and Money.</h3>
+                <div class="button blue">Hire Now</div>
+            </div>
+        </div>
+
+        {% include 'custom/system/global/footer.html' %} {{ standard_footer_includes }}
+    </div>
+    <!-- wrapper ends -->
+</body>
+
+</html>

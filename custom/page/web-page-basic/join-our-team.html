@@ -1,0 +1,123 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="{{ html_lang }}" {{ html_lang_dir }}> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="{{ html_lang }}" {{ html_lang_dir }}>        <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="{{ html_lang }}" {{ html_lang_dir }}>               <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="{{ html_lang }}" {{ html_lang_dir }}>
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="author" content="{{ meta_author }}">
+    <meta name="description" content="{{ page_meta.meta_description }}">
+    <meta name="generator" content="HubSpot">
+    <title>{{ page_meta.html_title }}</title>
+    {% if site_settings.favicon_src %}
+    <link rel="shortcut icon" href="{{ site_settings.favicon_src }}" />{% endif %}
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css">
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJzIr4DnSasMDFxVMOgyIDS-4gx6IA6lI"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    {{ standard_header_includes }} 
+    {% style include_default_custom_css="true" %}
+</head>
+
+<body class="home innerPage">
+    <div class="wrapper">
+        {% include 'custom/system/global/header.html' %}
+        <div class="hero innerHero joinOurTeam">
+            <div class="heroBg">
+                <div class="heroBgImage">
+                    <div class="inner">
+                        <div class="overlay"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <h1>Join Our Team</h1>
+                <h2>Work With a Staffing Industry Leader</h2>
+            </div>
+        </div>
+
+        <div class="centeredText halfWidth">
+            <div class="container">
+                <h2>Are you looking to advance your career as a staffing professional?</h2>
+                <p>Working at Liberty is rewarding, fast-paced, and well-compensated. If you thrive under pressure and love a new challenge, consider a career with Liberty Staffing Services.</p>
+            </div>
+        </div>
+
+        <div class="imageAndText imageLeftTextRight">
+            <div class="container">
+                <div class="leftSide">
+                    <img src="{% image_src 'textImgBlock1', label='Text Image Block 1' src='https://cdn2.hubspot.net/hubfs/431758/2018%20site/join%20our%20team/join.jpg', no_wrapper=True %}"
+                        alt="block of images">
+                </div>
+        
+                <div class="rightSide">
+                    {% widget_block rich_text 'imageLeftTextRight' overrideable=True, label='image left text right', no_wrapper=True %} {% widget_attribute
+                    'html' %}
+                    <p>We want our employees to love coming to work and are pleased to offer: </p>
+                    <ul>
+                    <li>Employee benefit program </li>
+                    <li>Bonus incentives and commissions </li>
+                    <li>Regular business hours</li>
+                    <li>Liberty Staffing Quality System (SQS) training </li>
+                    <li>Career advancement potential</li>
+                    </ul>
+                    {% end_widget_attribute %} {% end_widget_block %}
+                </div>
+
+            </div>
+        </div>
+
+        <div class="centeredText halfWidth">
+            <div class="container">
+                <p>We are always on the lookout for employees who are customer service oriented, dedicated, and passionate about what
+                    they do.</p>
+            </div>
+        </div>
+
+        <div class="internalListings">
+            <div class="container">
+                <h2>Positions at Liberty</h2>
+                <div class="postingsList">
+                    <div class="posting title">
+                        <div class="column"><h3>Posted on (Y/M/D)</h3></div>
+                        <div class="column"><h3>Position Available</h3></div>
+                        <div class="column"><h3>City</h3></div>
+                        <div class="column"><h3>Job Details</h3></div>
+                    </div>
+                    <div class="posting">
+                        <div class="column"><p>2018-01-02</p></div>
+                        <div class="column"><p>Clerical Business Development Representative</p></div>
+                        <div class="column"><p>London, ON</p></div>
+                        <div class="column"><a href="https://cdn2.hubspot.net/hubfs/431758/careers/Clerical%20Business%20Development%20Representative%20in%20London.docx?t=1520003765210" class="button blue">Details</a></div>
+                    </div>
+                    <div class="posting">
+                        <div class="column"><p>2017-11-10</p> </div>
+                        <div class="column"><p>Client Care Specialist</p> </div>
+                        <div class="column"><p>All Locations</p></div>
+                        <div class="column"><a href="https://cdn2.hubspot.net/hubfs/431758/careers/Liberty%20Staffing%20Client%20Care%20Specialist%20-%20Southern%20Ontario%20(1).doc?t=1520003765210" class="button blue">Details</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="centeredText halfWidth bottomSection">
+            <div class="container">
+                <h2>Jumpstart Your Career</h2>
+                <p>Get started on your new career path today!</p>
+                <a href="" class="button red">Email My Resume</a>
+            </div>
+        </div>
+
+
+        {% include 'custom/system/global/footer.html' %} {{ standard_footer_includes }}
+    </div>
+    <!-- wrapper ends -->
+</body>
+
+</html>

@@ -3,6 +3,8 @@
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="{{ html_lang }}" {{ html_lang_dir }}>        <![endif]-->
 <!--[if IE 8]>    <html class="no-js lt-ie9" lang="{{ html_lang }}" {{ html_lang_dir }}>               <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="{{ html_lang }}" {{ html_lang_dir }}> <!--<![endif]-->
+<!-- PRODUCTION HEAD -->
+
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -11,163 +13,372 @@
 	<meta name="generator" content="HubSpot">
 	<title>{{ page_meta.html_title }}</title>
 	{% if site_settings.favicon_src %}<link rel="shortcut icon" href="{{ site_settings.favicon_src }}" />{% endif %}
-  <link rel = "stylesheet" type = "text/css" href = "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
-  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+  <link rel = "stylesheet" type = "text/css" href = "https://maxcdn.bootstrapcdn.com/fo	nt-awesome/4.7.0/css/font-awesome.min.css"/>
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css">
   <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJzIr4DnSasMDFxVMOgyIDS-4gx6IA6lI"></script>
-  <script src="https://use.typekit.net/kkh2qsb.js"></script>
-  <script>try{Typekit.load({ async: true });}catch(e){}</script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.8.0/slick.min.js"></script> -->
 	{{ standard_header_includes }}
 	{% style include_default_custom_css="true" %}
 
 </head>
+
 <body class="home">
-<!-- Start HTML layout here. -->
-<!-- wrapper starts -->
-<div class="wrapper">
-    <div class="innerWrapper">
-		<div class="inner">
-			<img src="https://cdn2.hubspot.net/hubfs/3805695/SalesHub/homepage%20images/circle.png" alt="" class="circle circle1">
-			<img src="https://cdn2.hubspot.net/hubfs/3805695/SalesHub/homepage%20images/blue%20dots/circleDot.png" alt="" class="circle circle2">
-			<img src="https://cdn2.hubspot.net/hubfs/3805695/SalesHub/homepage%20images/blue%20dots/bluedot.png" alt="" class="circle circle3">
-			<img src="https://cdn2.hubspot.net/hubfs/3805695/SalesHub/homepage%20images/blue%20dots/smallDot.png" alt="" class="circle circle4">
-			<img src="https://cdn2.hubspot.net/hubfs/3805695/SalesHub/homepage%20images/blue%20dots/fullCircleDot.png" alt="" class="circle circle5">
-			
+	<div class="wrapper">
+	 {% include 'custom/system/global/header.html' %}
+	<div class="hero homeHero">
+		<div class="heroBg">
+			<div class="heroBgImage">
+				<div class="inner">
+					<div class="overlay"></div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<h1>Find Your Flexible Staffing Solution</h1>
+			<h2>We connect top-quality job seekers with employers across Southern Ontario.</h2>
+			<div class="buttonBox">
+				<a href="" class="button blue">Hire Now</a>
+				<a href="" class="button white">Apply Today</a>
+			</div>
 		</div>
 	</div>
-	{% include 'custom/system/global/header.html' %}
-
-<!-- hero starts -->
-	<div class="hero">
-	    <div class="inner"></div>
+	<div class="imageAndText textLeftImageRight">
 		<div class="container">
-				{% widget_block rich_text "heroModule" overrideable=True, label='Hero Module' no_wrapper=True  %}
-				    {% widget_attribute "html" %}
-					    <h1>Workforce<br> Management Made Easy</h1>
-					    <h2>Simplify complex business<br> functions to power your<br> people’s growth.</h2>
-					    <a href="/book-a-consultation" class="orangeButton">Book a Consultation</a>
-				    {% end_widget_attribute %}
+			<div class="leftSide">
+				{% widget_block rich_text 'textLeftImageRight' overrideable=True, label='text left image right', no_wrapper=True  %}
+				{% widget_attribute 'html' %}
+					<h2>Employers</h2>
+					<h3>Is a complicated hiring process causing you stress?</h3>
+					<p>Do you need quality employees fast? We've been providing temporary and permanent staffing solutions for over 15 years. Save time and let our experts find the right candidates for your organization.</p>
+					<a href="/emloyer-services" class="button blue">Employer Services</a>
+				{% end_widget_attribute %}
 				{% end_widget_block %}
+			</div>
+			<div class="rightSide">
+				<img src="{% image_src 'imgGrid1', label='imageRight' src='https://cdn2.hubspot.net/hubfs/431758/2018%20site/Homepage/1block.png', no_wrapper=True %}" alt="block of images">
+			</div>
 		</div>
 	</div>
-<!-- Hero ends -->
-<!-- All Your HR Needs Starts -->
-	<div class="hrNeeds">
+
+	<div class="imageAndText imageLeftTextRight">
 		<div class="container">
-			{% widget_block rich_text "HRNeeds" overrideable=True, label='All Your HR Needs' no_wrapper=True  %}
-			    {% widget_attribute "html" %}
-				    <h3>All Your HR Needs. One Platform.</h3>
-				    <p>Paymedia takes care of all your human capital needs including payroll, time management, human resources, and benefits administration. Use individual services, or take advantage of our entire integrated system.</p>
-				    <a href="/book-a-consultation" class="orangeButton">Book a Consultation</a>
-			    {% end_widget_attribute %}
+			<div class="leftSide">
+				<img src="{% image_src 'imgGrid2', label='imageLeft' src='https://cdn2.hubspot.net/hubfs/431758/2018%20site/Homepage/2block.png', no_wrapper=True %}" alt="block of images">
+			</div>
+			<div class="rightSide">
+				{% widget_block rich_text 'imageLeftTextRight' overrideable=True, label='image left text right', no_wrapper=True  %}
+				{% widget_attribute 'html' %}
+					<h2>Job Seekers</h2>
+					<h3>Liberty staffing makes the job hunt easy.</h3>
+					<p>Whether you're looking for temp work or to start a new career, we would love to help. Our client care specialists will work to find office, warehouse, and industrial positions for you.</p>
+					<a href="/find-a-job" class="button red">Find a Job</a>
+				{% end_widget_attribute %}
+				{% end_widget_block %}
+			</div>
+		</div>
+	</div>
+	
+	<div class="statsGrid">
+		<div class="statsGridInner">
+		</div>
+		<div class="container">
+			{% widget_block rich_text 'statsGrid' overrideable=True, label='Stats Grid', no_wrapper=True  %}
+			{% widget_attribute 'html' %}
+			<h2>How Staffing Agencies Keep the World Working</h2>
+			<div class="grid">
+				<div class="gridItem">
+					<h3>90%</h3>
+					<p>of business owners say temp staffing agencies give them the flexibility they need year round.</p>
+				</div>
+				<div class="gridItem">
+					<h3>XX</h3>
+					<p>Liberty matches XX% of its candidates with jobs in their industries.</p>
+				</div>
+				<div class="gridItem">
+					<h3>3</h3>
+					<p>million people are employed by staffing companies every week in North America.</p>
+				</div>
+				<div class="gridItem">
+					<h3>14.2%</h3>
+					<p>The number of temp workers in Canada increased by 14.2% between 2009 and 2012.</p>
+				</div>
+				<div class="gridItem">
+					<h3>90%</h3>
+					<p>9 out of 10 temp workers say working with a staffing agency has made them more employable according to employers.</p>
+				</div>
+				<div class="gridItem">
+					<h3>79%</h3>
+					<p>of temp staffing employees work full time.</p>
+				</div>
+			</div>
+			{% end_widget_attribute %}
 			{% end_widget_block %}
-			
 		</div>
 	</div>
 
-<!-- All Your HR needs ends -->
-<!-- services blocks start -->
-	<div class="servicesBlocks">
+	<div class="industriesWeServe">
 		<div class="container">
-			{% widget_container "servicesBlocksFlexibleColumn" , label='Services Blocks' %}
-			{% end_widget_container %}
+			<h2>Industries We Serve</h2>
+			<div class="industries">
+				<div class="industry">
+					<div class="redBlock">
+						<img src="{% image_src 'industryImg1' label='Industry Image 1', src='https://cdn2.hubspot.net/hubfs/431758/2018%20site/Homepage/industrial.svg', no_wrapper=True %}" alt="">
+					</div>
+					<div class="list">
+						<h3>Light Industrial</h3>
+						<ul>
+							<li>Machine Operators</li>
+							<li>Welders</li>
+							<li>Food Processors</li>
+							<li>Electronic Assemblers</li>
+						</ul>
+					</div>
+				</div>
+				<div class="industry">
+					<div class="redBlock">
+						<img src="{% image_src 'industryImg2' label='Industry Image 2', src='https://cdn2.hubspot.net/hubfs/431758/2018%20site/Homepage/office.svg', no_wrapper=True %}" alt="">
+					</div>
+					<div class="list">
+						<h3>Office</h3>
+						<ul>
+							<li>Accounts Payable/Recievable</li>
+							<li>Data Entry Clerks</li>
+							<li>Administrative Assistants</li>
+							<li>Receptionists</li>
+						</ul>
+					</div>
+				</div>
+				<div class="industry">
+					<div class="redBlock">
+						<img src="{% image_src 'industryImg3' label='Industry Image 3', src='https://cdn2.hubspot.net/hubfs/431758/2018%20site/Homepage/warehouse.svg', no_wrapper=True %}" alt="">
+					</div>
+					<div class="list">
+						<h3>Warehouse</h3>
+						<ul>
+							<li>Shippers/Receivers</li>
+							<li>Forklift Operators</li>
+							<li>Stock Personnel</li>
+							<li>General Labourers</li>
+						</ul>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
-<!-- services blocks end -->
-<!-- video section starts -->
-	<div class="videoSection">
-		<div class="container">
-			<div class="inner">
-				<div class="leftSide">
-					<script src="https://fast.wistia.com/embed/medias/gjd5uldohe.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding"><div class="wistia_responsive_wrapper" ><span class="wistia_embed wistia_async_gjd5uldohe popover=true popoverAnimateThumbnail=true popoverContent=link videoFoam=true" style="display:inline"><a href="#"><i class="fa fa-play-circle-o" aria-hidden="true"></i></a></span></div></div>
-					
-				</div>
-				<div class="rightSide">
-					{% widget_block rich_text "videoCopy" overrideable=True, label='Video Section Copy' no_wrapper=True  %}
-					    {% widget_attribute "html" %}
-						    <h3>Do More with Less</h3>
-						    <p>Our powerful cloud-based workforce management solution, iSolved®, helps you manage the entire employee lifecycle from pre-hire to retire.</p>
-						    <script src="https://fast.wistia.com/embed/medias/gjd5uldohe.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;top:0;width:100%;"><span class="wistia_embed wistia_async_gjd5uldohe popover=true popoverAnimateThumbnail=true popoverContent=link videoFoam=true" style="display:inline"><a href="#"><i class="fa fa-play-circle" aria-hidden="true"></i> See How it Works</a></span></div></div>
 
-						  <!--   <a href="/book-a-consultation" class=""><i class="fa fa-play-circle" aria-hidden="true"></i>See How it all works</a> -->
-					    {% end_widget_attribute %}
-					{% end_widget_block %}
-				</div>
-			</div>
+	<div class="testimonials">
+		<div class="testimonialsBackground">
 		</div>
-	</div>
-<!-- video section ends -->
-<!-- not your average HCM starts -->
-	<div class="threeBoxes">
-		<div class="container">
-			<div class="leftSide">
-				{% widget_block rich_text "notYourAverageHCMLeft" overrideable=True, label='Not Your Average HCM Left Side' no_wrapper=True  %}
-				    {% widget_attribute "html" %}
-					    <h3>Not Your Average HCM Company</h3>
-					    <p>Frustrated by the service you’re getting from the big players like ADP and Paychex? We’re different. With Paymedia, you get an enterprise workforce management solution with personalized attention.</p>
-					    <a href="/book-a-consultation" class="orangeButton">Book a Consultation</a>
-				    {% end_widget_attribute %}
-				{% end_widget_block %}
-				
-			</div>
-			<div class="rightSide">
-				<div class="box orange">
-					{% widget_block rich_text "notYourAverageHCMOrange" overrideable=True, label='Not Your Average HCM Orange Box' no_wrapper=True  %}
-					    {% widget_attribute "html" %}
-						    <img src="https://cdn2.hubspot.net/hubfs/3805695/SalesHub/homepage%20images/unparalledService.png" alt="">
-						    <h4>Unparalled Service</h4>
-						    <p>We’re always here to answer your questions and give you expert advice when you need it. No need to stress about switching</p>
-					    {% end_widget_attribute %}
-					{% end_widget_block %}
+			<h2>Testimonials</h2>
+			<div class="testimonialSlider">
+				<div class="slide">
+					<img src="{% image_src 'testimonialImage1' title='Testimonial Image 1' src='https://cdn2.hubspot.net/hubfs/431758/3_Effective_Ways.jpg', no_wrapper=True %}" alt="">
+					<div class="testimonialText">
+						<p>I have been with Liberty Staffing for one and a half years. I have rarely been without work with this company. The staff
+						have always been friendly and accommodating to my needs. Hats off to the girls at Liberty in Stratford!</p>
+						<p class="name">Toby M. Stratford, Ontario</p>
+					</div>
 				</div>
-				<div class="box red">
-					{% widget_block rich_text "notYourAverageHCMRed" overrideable=True, label='Not Your Average HCM Red Box' no_wrapper=True  %}
-					    {% widget_attribute "html" %}
-						    <img src="https://cdn2.hubspot.net/hubfs/3805695/SalesHub/homepage%20images/personalizedApproach.png" alt="">
-						    <h4>Personalized Approach</h4>
-						    <p>We take our role as your trusted advisor seriously. With Paymedia,
-you’re not just a client number; we pay attention to your needs. Your
-success is our passion.</p>
-					    {% end_widget_attribute %}
-					{% end_widget_block %}
+				<div class="slide">
+					<img src="{% image_src 'testimonialImage2' title='Testimonial Image 2' src='https://cdn2.hubspot.net/hubfs/431758/3_Effective_Ways.jpg', no_wrapper=True %}" alt="">
+					<div class="testimonialText">
+						<p>Liberty Staffing made the entire application process quick and painless. We were new to the area, so we appreciated the help in finding a job in order to get settled. I would recommend Liberty Staffing to anyone who needs help finding a job.</p>
+						<p class="name">Marzena S. Assignment Employee Woodstock, Ontario</p>
+					</div>
 				</div>
-				<div class="box blue">
-					{% widget_block rich_text "notYourAverageHCMBlue" overrideable=True, label='Not Your Average HCM Blue Box' no_wrapper=True  %}
-					    {% widget_attribute "html" %}
-						    <img src="https://cdn2.hubspot.net/hubfs/3805695/SalesHub/homepage%20images/affordablePrices.png" alt="">
-						    <h4>Affordable Prices</h4>
-						    <p>We take our role as your trusted advisor seriously. With Paymedia,
-you’re not just a client number; we pay attention to your needs. Your
-success is our passion.</p>
-					    {% end_widget_attribute %}
-					{% end_widget_block %}
+				<div class="slide">
+					<img src="{% image_src 'testimonialImage3' title='Testimonial Image 3' src='https://cdn2.hubspot.net/hubfs/431758/3_Effective_Ways.jpg', no_wrapper=True %}" alt="">
+					<div class="testimonialText">
+						<p>We have been using Liberty Staffing for more than 10 years. Whether we need one assignment employee on a short-term basis or have a large order for on-going work, Liberty Staffing’s office staff is always professional, courteous and competent.</p>
+						<p class="name">Barb J. Controller Omex Manufacturing ULC Stratford, Ontario</p>
+					</div>
+				</div>
+				<div class="slide">
+					<img src="{% image_src 'testimonialImage4' title='Testimonial Image 4' src='https://cdn2.hubspot.net/hubfs/431758/3_Effective_Ways.jpg', no_wrapper=True %}" alt="">
+					<div class="testimonialText">
+						<p>Liberty Staffing Services has become an integral part of our business handling and addressing our part and full time staffing needs with prompt convenient service. The quality personnel they provide consistently meet our requirements and reflect the professional services Liberty Staffing provides.</p>
+						<p class="name">Trevor F. Production Manager Maglin Site Furniture Woodstock, Ontario</p>
+					</div>
 				</div>
 			</div>
-		</div>
 	</div>
-<!-- not your average HCM ends -->
-<!-- circleImage starts -->
-	<div class="circleImage">
-		<div class="container">
-			<div class="leftSide">
-				<img src='{% image_src "circleImage" label="circular image", src="https://cdn2.hubspot.net/hubfs/3805695/SalesHub/homepage%20images/circularGirl.png", no_wrapper=True %}' alt="">
-			</div>
-			<div class="rightSide">
-				{% widget_block rich_text "circleImageCopy" overrideable=True, label='Circular Image Copy' no_wrapper=True  %}
-				    {% widget_attribute "html" %}
-					    <h3>It’s Time to Stress Less and Live More<br>Ready to Get Started?</h3>
-					    <p>Take advantage of our all-in-one workforce management solution. Ready to get started?</p>
-					    <a href="/book-a-consultation" class="orangeButton">Book a Consultation</a>
-				    {% end_widget_attribute %}
-				{% end_widget_block %}
-			</div>
-		</div>
-	</div>
-<!-- circleImage ends -->
 
+	<div class="awards">
+		<div class="awardsBackground"></div>
+			<h2>awards</h2>
+			<div class="awardsSlider">
+				<div class="awardSlide">
+					<div class="inner">
+						<img src="{% image_src 'awardSlide1' title="award slide 1" src='https://cdn2.hubspot.net/hubfs/431758/2018%20site/Homepage/rcAward.png', no_wrapper=True %}" alt=""></div>
+					</div>
+				<div class="awardSlide">
+					<div class="inner">
+						<img src="{% image_src 'awardSlide2' title="award slide 2" src='https://cdn2.hubspot.net/hubfs/431758/2018%20site/Homepage/rcAward.png', no_wrapper=True %}" alt=""></div>
 
+					</div>
+				<div class="awardSlide">
+					<div class="inner">
+						<img src="{% image_src 'awardSlide3' title="award slide 3" src='https://cdn2.hubspot.net/hubfs/431758/2018%20site/Homepage/rcAward.png', no_wrapper=True %}" alt=""></div>
+
+					</div>
+				<div class="awardSlide">
+					<div class="inner">
+						<img src="{% image_src 'awardSlide4' title="award slide 4" src='https://cdn2.hubspot.net/hubfs/431758/2018%20site/Homepage/rcAward.png', no_wrapper=True %}" alt=""></div>
+
+					</div>
+				<div class="awardSlide">
+					<div class="inner">
+						<img src="{% image_src 'awardSlide5' title="award slide 5" src='https://cdn2.hubspot.net/hubfs/431758/2018%20site/Homepage/rcAward.png', no_wrapper=True %}" alt=""></div>
+
+					</div>
+				<div class="awardSlide">
+					<div class="inner">
+						<img src="{% image_src 'awardSlide6' title="award slide 6" src='https://cdn2.hubspot.net/hubfs/431758/2018%20site/Homepage/rcAward.png', no_wrapper=True %}" alt=""></div>
+
+					</div>
+			</div>
+	</div>
+
+	
+
+	<div class="locationsMap">
+		<div id="map">
+		</div>
+		<div class="container">
+			<div class="listing">
+				<div class="locationBox arthur">
+					<h2>Locations</h2>
+					<img src="https://cdn2.hubspot.net/hubfs/431758/2018%20site/Homepage/map.svg" alt="">
+					<h3>Arthur</h3>
+					<p>480 Smith Street, Unit 3</p>
+					<p>N0G 1A0</p>
+					<p class="phoneNumber">519-848-2736</p>
+				</div>
+				<div class="locationBox brampton">
+					<h2>Locations</h2>
+					<img src="https://cdn2.hubspot.net/hubfs/431758/2018%20site/Homepage/map.svg" alt="">
+					<h3>Brampton</h3>
+					<p>700 Balmoral Drive, Unit 6B</p>
+					<p>L6T 1X1</p>
+					<p class="phoneNumber">905-799-8586</p>
+				</div>
+				<div class="locationBox cambridge">
+					<h2>Locations</h2>
+					<img src="https://cdn2.hubspot.net/hubfs/431758/2018%20site/Homepage/map.svg" alt="">
+					<h3>cambridge</h3>
+					<p>688 Hespeler Road, Suite 2A</p>
+					<p>N1R 8N7</p>
+					<p class="phoneNumber">519-624-2877</p>
+				</div>
+				<div class="locationBox guelph">
+					<h2>Locations</h2>
+					<img src="https://cdn2.hubspot.net/hubfs/431758/2018%20site/Homepage/map.svg" alt="">
+					<h3>Guelph</h3>
+					<p>214 Speedvale Avenue West, Unit 4</p>
+					<p>N1H 1C4</p>
+					<p class="phoneNumber">519-823-9697</p>
+				</div>
+				<div class="locationBox kitchener locationBoxActive">
+					<h2>Locations</h2>
+					<img src="https://cdn2.hubspot.net/hubfs/431758/2018%20site/Homepage/map.svg" alt="">
+					<h3>Kitchener</h3>
+					<p>625 King Street East, Suite 2D</p>
+					<p>N2G 4V4</p>
+					<p class="phoneNumber">519-742-2011</p>
+				</div>
+				<div class="locationBox london">
+					<h2>Locations</h2>
+					<img src="https://cdn2.hubspot.net/hubfs/431758/2018%20site/Homepage/map.svg" alt="">
+					<h3>London</h3>
+					<p>715 Wellington Road South, Unit C</p>
+					<p>N6C 4R4</p>
+					<p class="phoneNumber">519-453-9021</p>
+				</div>
+				<div class="locationBox mississauga">
+					<h2>Locations</h2>
+					<img src="https://cdn2.hubspot.net/hubfs/431758/2018%20site/Homepage/map.svg" alt="">
+					<h3>Mississauga</h3>
+					<p>1310 Dundas Street East, Suite 208</p>
+					<p>L4Y 2C1</p>
+					<p class="phoneNumber">905-949-5218</p>
+				</div>
+				<div class="locationBox stcatherines">
+					<h2>Locations</h2>
+					<img src="https://cdn2.hubspot.net/hubfs/431758/2018%20site/Homepage/map.svg" alt="">
+					<h3>St. Catherines</h3>
+					<p>80 King Street, Suite 8</p>
+					<p>L2R 7G1</p>
+					<p class="phoneNumber">905-688-8484</p>
+				</div>
+				<div class="locationBox stratford">
+					<h2>Locations</h2>
+					<img src="https://cdn2.hubspot.net/hubfs/431758/2018%20site/Homepage/map.svg" alt="">
+					<h3>Stratford</h3>
+					<p>190 Ontario Street</p>
+					<p>N5A 3H4</p>
+					<p class="phoneNumber">519-275-2742</p>
+				</div>
+				<div class="locationBox waterloo">
+					<h2>Locations</h2>
+					<img src="https://cdn2.hubspot.net/hubfs/431758/2018%20site/Homepage/map.svg" alt="">
+					<h3>Waterloo</h3>
+					<p>583 King Street North, Unit 5B</p>
+					<p>N2V 2E5</p>
+					<p class="phoneNumber">519-747-0577</p>
+				</div>
+				<div class="locationBox woodstock">
+					<h2>Locations</h2>
+					<img src="https://cdn2.hubspot.net/hubfs/431758/2018%20site/Homepage/map.svg" alt="">
+					<h3>Woodstock</h3>
+					<p>925 Dundas Street, Unit 3A</p>
+					<p>N4S 8V3</p>
+					<p class="phoneNumber">519-539-7961</p>
+				</div>
+				<div class="locationLinks">
+					<ul>
+						<li>
+							<a href="#" class="locationLink" data-location="arthur">arthur</a>
+						</li>
+						<li>
+							<a href="#" class="locationLink" data-location="brampton">brampton</a>
+						</li>
+						<li>
+							<a href="#" class="locationLink" data-location="cambridge">cambridge</a>
+						</li>
+						<li>
+							<a href="#" class="locationLink" data-location="guelph">guelph</a>
+						</li>
+						<li>
+							<a href="#" class="locationLink locationLinkActive" data-location="kitchener">kitchener</a>
+						</li>
+						<li>
+							<a href="#" class="locationLink" data-location="london">london</a>
+						</li>
+						<li>
+							<a href="#" class="locationLink" data-location="mississauga">mississauga</a>
+						</li>
+						<li>
+							<a href="#" class="locationLink" data-location="stcatherines">st. catharines</a>
+						</li>
+						<li>
+							<a href="#" class="locationLink" data-location="stratford">stratford</a>
+						</li>
+						<li>
+							<a href="#" class="locationLink" data-location="waterloo">waterloo</a>
+						</li>
+						<li>
+							<a href="#" class="locationLink" data-location="woodstock">woodstock</a>
+						</li>
+					</ul>
+				</div>
+			</div> <!-- listing ends here -->
+		</div><!-- container ends here -->	
+	</div>
 	{% include 'custom/system/global/footer.html' %}
-</div> <!-- wrapper ends -->
 	{{ standard_footer_includes }}
+	</div> <!-- wrapper ends -->
 </body>
 </html>
 

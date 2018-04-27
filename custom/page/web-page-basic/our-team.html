@@ -1,0 +1,57 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="{{ html_lang }}" {{ html_lang_dir }}> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="{{ html_lang }}" {{ html_lang_dir }}>        <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="{{ html_lang }}" {{ html_lang_dir }}>               <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="{{ html_lang }}" {{ html_lang_dir }}>
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="author" content="{{ meta_author }}">
+    <meta name="description" content="{{ page_meta.meta_description }}">
+    <meta name="generator" content="HubSpot">
+    <title>{{ page_meta.html_title }}</title>
+    {% if site_settings.favicon_src %}
+    <link rel="shortcut icon" href="{{ site_settings.favicon_src }}" />{% endif %}
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css">
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJzIr4DnSasMDFxVMOgyIDS-4gx6IA6lI"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.8.0/slick.min.js"></script> -->
+    {{ standard_header_includes }} {% style include_default_custom_css="true" %}
+
+</head>
+
+<body class="home innerPage">
+    <div class="wrapper">
+        {% include 'custom/system/global/header.html' %}
+        <div class="hero innerHero aboutUs">
+            <div class="heroBg">
+                <div class="heroBgImage">
+                    <div class="inner">
+                        <div class="overlay"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <h1>Meet Our Team</h1>
+            </div>
+        </div>
+
+        <div class="teamModule">
+            <div class="container">
+                 {% widget_container "my_flexible_column" label="team member module" %}
+                 {% end_widget_container %}
+
+            </div>
+        </div>
+        {% include 'custom/system/global/footer.html' %} {{ standard_footer_includes }}
+    </div>
+    <!-- wrapper ends -->
+</body>
+
+</html>

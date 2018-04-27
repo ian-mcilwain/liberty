@@ -1,0 +1,163 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="{{ html_lang }}" {{ html_lang_dir }}> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="{{ html_lang }}" {{ html_lang_dir }}>        <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="{{ html_lang }}" {{ html_lang_dir }}>               <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="{{ html_lang }}" {{ html_lang_dir }}>
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="author" content="{{ meta_author }}">
+    <meta name="description" content="{{ page_meta.meta_description }}">
+    <meta name="generator" content="HubSpot">
+    <title>{{ page_meta.html_title }}</title>
+    {% if site_settings.favicon_src %}
+    <link rel="shortcut icon" href="{{ site_settings.favicon_src }}" />{% endif %}
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css">
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJzIr4DnSasMDFxVMOgyIDS-4gx6IA6lI"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.8.0/slick.min.js"></script> -->
+    {{ standard_header_includes }} {% style include_default_custom_css="true" %}
+
+</head>
+
+<body class="home innerPage">
+    <div class="wrapper">
+        {% include 'custom/system/global/header.html' %}
+        <div class="hero innerHero findCareer">
+            <div class="heroBg">
+                <div class="heroBgImage">
+                    <div class="inner">
+                        <div class="overlay"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <h1>find a job</h1>
+                <h2>Your Next Job is One Step Away</h2>
+                <p>We know looking for work is a time-consuming and frustrating task.  The hard work that goes into perfecting your cover letter and tweaking your resume gets old fast. Liberty Staffing makes your job search easy.</p>
+            </div>
+        </div>
+
+        <div class="checkBoxes">
+            <div class="container">
+                <div class="checkBox">
+                    <p>Let us take control. Upload your resume today to begin the registration process</p>
+                    <img src="{% image_src 'checkbox1' src='https://cdn2.hubspot.net/hubfs/431758/2018%20site/find%20a%20career/1arrow.svg', no_wrapper=True %}" alt="" srcset="">
+                </div>
+                <div class="checkBox">
+                    <p>Complete the registration process by visiting one of our offices and meeting with our employment specialists.</p>
+                    <img src="{% image_src 'checkbox2' src='https://cdn2.hubspot.net/hubfs/431758/2018%20site/find%20a%20career/1arrow.svg', no_wrapper=True %}" alt="" srcset="">
+                </div>
+                <div class="checkBox">
+                    <p>Once registered, we will call you to offer available positions. It's that easy!</p>
+                    <img src="{% image_src 'checkbox3' src='https://cdn2.hubspot.net/hubfs/431758/2018%20site/find%20a%20career/check.svg', no_wrapper=True %}" alt="" srcset="">
+                </div>
+            </div>
+        </div>
+
+        <div class="imageAndText textLeftImageRight">
+            <div class="container">
+                
+                <div class="leftSide">
+                    {% widget_block rich_text 'imageLeftTextRight' overrideable=True, label='image left text right', no_wrapper=True %} {% widget_attribute
+                    'html' %}
+                        <h2>Job Seekers</h2>
+                        <p>Let Liberty Staffing take the weight off your shoulders. We specialize in staffing office, industrial, and warehouse positions in both temporary and permanent roles. With 11 convenient locations in Southern Ontario, help is right around the corner. Search our database for current job opportunities.</p>
+                        <a href="/job-board" class="button blue">Job Board</a>
+                    {% end_widget_attribute %} {% end_widget_block %}
+                </div>
+                <div class="rightSide">
+                    <img src="{% image_src 'textImgBlock1', label='Text Image Block 1' src='https://cdn2.hubspot.net/hubfs/431758/2018%20site/about/about1.jpg', no_wrapper=True %}"
+                        alt="block of images">
+                </div>
+            </div>
+        </div>
+
+        <div class="redSection">
+            <div class="redSectionBackground"></div>
+            <div class="imageAndText textLeftImageRight">
+                <div class="container">
+            
+                    <div class="leftSide">
+                        {% widget_block rich_text 'imageLeftTextRight' overrideable=True, label='image left text right', no_wrapper=True %} {% widget_attribute
+                        'html' %}
+                        <h2>Whether you're looking for temporary or permanent position,</h2>
+                        <p>job seekers love working with Liberty Staffing. We strive to ensure our matches meet both the employee and employer's expectations. Along with over 15 years of staffing expertise, we offer:</p>
+                        {% end_widget_attribute %} {% end_widget_block %}
+                    </div>
+                    <div class="rightSide">
+                        <img src="{% image_src 'textImgBlock1', label='Text Image Block 1' src='https://cdn2.hubspot.net/hubfs/431758/2018%20site/about/about1.jpg', no_wrapper=True %}"
+                            alt="block of images">
+                    </div>
+                </div>
+            </div>
+            <div class="imageAndText textLeftImageRight">
+                <div class="container">
+            
+                    <div class="leftSide">
+                        {% widget_block rich_text 'imageLeftTextRight' overrideable=True, label='image left text right', no_wrapper=True %} {% widget_attribute
+                        'html' %}
+                        <ul>
+                            <li>Weekly pay</li>
+                            <li>Direct deposit payments</li>
+                            <li>Industry competetive wages</li>
+                            <li>Transparent hiring process</li>
+                            <li>Job placement feedback</li>
+                            <li>Personal protective equipment resources</li>
+                            <li>Multiple convenient office locations</li>
+                        </ul>
+                        {% end_widget_attribute %} {% end_widget_block %}
+                    </div>
+                    <div class="rightSide">
+                        <img src="{% image_src 'textImgBlock1', label='Text Image Block 1' src='https://cdn2.hubspot.net/hubfs/431758/2018%20site/about/about1.jpg', no_wrapper=True %}"
+                            alt="block of images">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="applyForm">
+            <div class="container">
+                
+                <div class="formBox">
+                    <div class="leftSide">
+                        <img src="{% image_src 'startSearching' title='Start Searching Today Image' src='https://cdn2.hubspot.net/hubfs/431758/2018%20site/find%20a%20career/job-cta-photo-873454-edited.jpg',
+                        no_wrapper=True %}" alt="">
+                    </div>
+                    <div class="rightSide">
+                        <h2>Start Searching Today!</h2>
+                        <!--[if lte IE 8]>
+                        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+                        <![endif]-->
+                        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+                        <script>
+                            hbspt.forms.create({
+                                portalId: "431758",
+                                formId: "d12cb315-1320-4a20-b694-1707f2f9eac5",
+                                css: ""
+                            });
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="centeredText fullWidth bottomSection">
+            <div class="container">
+                <h3>Have a friend who's also on the job hunt? Check out our referral program for candidates who introduce us to new faces</h3>
+                <a href="/refer-a-friend" class="button blue">Refer a Friend</a>
+            </div>
+        </div>
+
+        {% include 'custom/system/global/footer.html' %} {{ standard_footer_includes }}
+    </div>
+    <!-- wrapper ends -->
+</body>
+
+</html>

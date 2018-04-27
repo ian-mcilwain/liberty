@@ -1,0 +1,119 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="{{ html_lang }}" {{ html_lang_dir }}> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="{{ html_lang }}" {{ html_lang_dir }}>        <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="{{ html_lang }}" {{ html_lang_dir }}>               <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="{{ html_lang }}" {{ html_lang_dir }}>
+<!--<![endif]-->
+<!-- PRODUCTION HEAD -->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="author" content="{{ meta_author }}">
+    <meta name="description" content="{{ page_meta.meta_description }}">
+    <meta name="generator" content="HubSpot">
+    <title>{{ page_meta.html_title }}</title>
+    {% if site_settings.favicon_src %}
+    <link rel="shortcut icon" href="{{ site_settings.favicon_src }}" />{% endif %}
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/fo	nt-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css">
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJzIr4DnSasMDFxVMOgyIDS-4gx6IA6lI"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.8.0/slick.min.js"></script> -->
+    {{ standard_header_includes }} {% style include_default_custom_css="true" %}
+
+</head>
+
+<body class="home">
+    <div class="wrapper">
+        {% include 'custom/system/global/header.html' %}
+        <div class="hero homeHero">
+            <div class="heroBg">
+                <div class="heroBgImage">
+                    <div class="inner">
+                        <div class="overlay"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <h1>Privacy Policy</h1>
+            </div>
+        </div>
+        <div class="centeredText fullWidth">
+            <div class="container">
+                {% widget_block rich_text 'privacyPolicy' overrideable=True, label='Privacy Policy', no_wrapper=True  %}
+                {% widget_attribute 'html' %}
+                    <p>The privacy of our clients, assignment employees, and employees is important to Liberty Staffing Services Inc. (referred
+                        to as "we" or "us" or "the service provider" in this policy) and the purpose of this policy is to inform you what personal
+                        information we collect, how we use it, what may be disclosed to others, how long we keep it, and how you can request
+                        access to your personal information or obtain more information about our privacy policies.</p>
+                    <h3 id="personal_information">Personal Information:</h3>
+                    <p>Personal information means any information about you except your name, business title, business address, business e-mail
+                        address, business telephone number or business fax number. Please note: names, addresses, e-mail addresses and telephone
+                        numbers listed in the telephone or other directories are not considered to be personal information.</p>
+                    <h3 id="accountability">Accountability:</h3>
+                    <p>We are responsible for protecting personal information within our control. We have designated the Privacy Officer to be accountable
+                        for our compliance with this policy and the privacy legislation.</p>
+                    <h3 id="personal_info_collected">Personal Information Collected:</h3>
+                    <p>We collect pertinent personal information whenever you engage in one or more of the following with Liberty Staffing Services
+                        Inc. directly or indirectly through our clients and representatives. Personal information may be collected verbally or
+                        non-verbally. This information is also sent to the claims management department when required for purposes of Workers
+                        Compensation claims and HR issues.</p>
+                    <p class="last">Personal information may include one, some, or all of the following information about you:</p>
+                    <ul class="privacy">
+                        <li>Name, address, telephone number, personal facsimile number, email address and personal emergency contact information.</li>
+                        <li>Occupation (current and past), work history and pay history, credentials to support training and/or education, language
+                            preference.</li>
+                        <li>Date of birth (only required if you are over 18 and under 65 for purposes of Canada Pension) or actual date of birth
+                            for benefits purposes or if requested by Workers Compensation Board in the event of a work place injury.</li>
+                        <li>Social insurance number, work permit number (required by law at time of hire) and banking information for direct deposit.
+                        </li>
+                        <li>Driver's license number or other photo identification.</li>
+                        <li>Marital status only if needed for benefits application.</li>
+                    </ul>
+                    <h3 id="safeguarding_personal_info">Safeguarding Personal Information:</h3>
+                    <p>Access to your personal information is restricted to those who need access to perform their work. Your personal information
+                        may be used for one or more of the following reasons related to providing customer service to you: provide employment
+                        services including references and employment confirmation, obtain personal benefits, provide referral to clients, process
+                        payment by cheque or direct deposit, provide updates and follow-up to obtain your feedback on our level of service.</p>
+                    <h3 id="use_of_personal_info">Disclosing or Sharing Personal Information:</h3>
+                    <p>We do not sell your personal information to any outside source. We may also disclose your personal information when we are
+                        required or permitted to do so by law to Canada Customs, Workers Compensation Board, Courts, and other government agencies.
+                        We may also be required to share some or all of your personal information with third party service providers including
+                        the following: prospective and existing clients, financial institutions (re: direct deposit), insurance companies (re:
+                        benefits), staffing services representatives (re: quality assessment and risk management), claims and HR management company
+                        (Windley Ely).</p>
+                    <h3 id="use_of_personal_info">Retention and Disposition of Personal Information:</h3>
+                    <p>We retain your personal information for the time we believe you are referable for employment. When there are legal requirements
+                        related to the retention period of personal information, we will comply with those requirements. Personal information
+                        will be safeguarded against unauthorized access to avoid misuse and fraudulent use.
+                        <br>
+                        <br>Personal information will be disposed after the appropriate retention period using approved methods; including electronic
+                        file deletion and paper shredding. A matrix is provided identifying the personal information we collect, how we use it,
+                        what may be disclosed to others, and how long we keep it. These forms (Matrix) are part of the application and your signature
+                        demonstrates your informed consent.</p>
+                    <h3 id="use_of_personal_info">Your Rights to Limit Use of Personal Information:</h3>
+                    <p>The personal information we collect is necessary to provide you with services related to your qualifications, placement,
+                        and assigned employment. Personal information is also used to build and maintain our relationship with you to serve you
+                        better.
+                        <br>
+                        <br>If you wish to limit collection, use, or disclosure of your personal information, please contact our Privacy Officer
+                        to discuss how we may honour your request and still continue to provide acceptable level of service.</p>
+                    <h3 id="use_of_personal_info">Questions and Concerns:</h3>
+                    <p>Please contact our Privacy Officer, if you have any questions or concerns about this Privacy Policy or about the collection,
+                        use, and disclosure of your personal information to Liberty Staffing Services Inc.</p>
+                {% end_widget_attribute %}
+                {% end_widget_block %}
+            </div>
+        </div>
+        
+
+    {% include 'custom/system/global/footer.html' %} {{ standard_footer_includes }}
+</div>
+<!-- wrapper ends -->
+</body>
+
+</html>
